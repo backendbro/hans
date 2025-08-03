@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hans Logistics Hub - Premium Cars & Solar Solutions in UAE</title>
+    <title>Hans Logistics Hub - Premium Cars & Solar Solutions</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -125,15 +125,14 @@
 
       .logo-text {
         font-size: 24px;
-        font-weight: 800;
+        font-weight: 500;
         color: white;
-        text-transform: uppercase;
         letter-spacing: 0.5px;
       }
 
       .logo-text span {
         color: var(--secondary);
-        font-weight: 700;
+        font-weight: 500;
       }
 
       .nav-links {
@@ -169,6 +168,25 @@
 
       .nav-links a:hover:after {
         width: 100%;
+      }
+
+      /* Hamburger Menu */
+      .hamburger {
+        display: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 10px;
+        z-index: 1001;
+      }
+
+      .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: var(--secondary);
+        margin: 5px 0;
+        transition: all 0.3s ease;
       }
 
       .whatsapp-icon {
@@ -970,6 +988,7 @@
         }
       }
 
+      /* Mobile Navigation */
       @media (max-width: 768px) {
         .top-nav-content {
           flex-direction: column;
@@ -983,9 +1002,42 @@
           width: 100%;
         }
 
-        .nav-container {
+        /* Hamburger menu styles */
+        .hamburger {
+          display: block;
+        }
+
+        .nav-links {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 70%;
+          height: 100vh;
+          background: var(--primary);
+          display: flex;
           flex-direction: column;
-          gap: 18px;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          transition: all 0.5s ease;
+          z-index: 1000;
+          box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links.active {
+          right: 0;
+        }
+
+        .hamburger.active span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -6px);
         }
 
         .hero-text h1 {
@@ -1014,11 +1066,10 @@
     <div class="top-nav">
       <div class="top-nav-content">
         <div class="logo">
-          <!-- <div class="logo-img">HLH</div>
+          <!-- <div class="logo-img">HLH</div> -->
           <div class="logo-text" style="color: var(--primary)">
-            HANS <span>LOGISTICS HUB</span>
-          </div> -->
-          <p>Shop@hansglobalhub.com</p>
+            Shop@hansglobalhub.com
+          </div>
         </div>
         <div class="contact-info">
           <a href="mailto:Shop@hansglobalhub.com"
@@ -1031,14 +1082,21 @@
       </div>
     </div>
 
-    <!-- Main Navbar -->
+    <!-- Main Navbar with Hamburger Menu -->
     <nav class="main-nav">
       <div class="nav-container">
         <div class="logo">
           <div class="logo-img">HLH</div>
           <div class="logo-text">HANS <span>LOGISTICS HUB</span></div>
         </div>
-        <div class="nav-links">
+
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
           <a href="#" class="active">Home</a>
           <a href="#">About</a>
           <a href="#">Contact Us</a>
@@ -1110,7 +1168,7 @@
             </p>
           </div>
 
-          <div class="mission-card">
+          <!-- <div class="mission-card">
             <div class="mission-icon">
               <i class="fas fa-lightbulb"></i>
             </div>
@@ -1119,9 +1177,9 @@
               Leverage our expertise and data-driven approach to make informed
               automotive decisions.
             </p>
-          </div>
+          </div> -->
 
-          <div class="mission-card">
+          <!-- <div class="mission-card">
             <div class="mission-icon">
               <i class="fas fa-chart-line"></i>
             </div>
@@ -1130,7 +1188,7 @@
               We facilitate fair and transparent transactions that deliver
               exceptional value for all parties.
             </p>
-          </div>
+          </div> -->
 
           <div class="mission-card">
             <div class="mission-icon">
@@ -1575,5 +1633,24 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      // Close menu when clicking on links
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
