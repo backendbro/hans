@@ -782,7 +782,7 @@
         font-size: 0.9rem;
       }
 
-      /* Modal */
+      /* Modal Overlay */
       .modal-overlay {
         position: fixed;
         top: 0;
@@ -805,12 +805,14 @@
         visibility: visible;
       }
 
+      /* Modal Container */
       .modal {
         background: var(--light);
         border-radius: 20px;
         width: 90%;
         max-width: 1000px;
-        overflow: hidden;
+        max-height: 90vh; /* limit height */
+        overflow-y: auto; /* enable internal scrolling */
         transform: translateY(50px);
         opacity: 0;
         transition: all 0.4s ease;
@@ -822,6 +824,7 @@
         opacity: 1;
       }
 
+      /* Header */
       .modal-header {
         display: flex;
         justify-content: space-between;
@@ -829,6 +832,9 @@
         padding: 25px 30px;
         background: var(--dark);
         color: var(--light);
+        position: sticky; /* stick to top */
+        top: 0;
+        z-index: 10;
       }
 
       .close-modal {
@@ -844,11 +850,13 @@
         color: var(--primary);
       }
 
+      /* Content Layout */
       .modal-content {
         display: flex;
         padding: 0;
       }
 
+      /* Image Panel */
       .modal-image {
         flex: 1;
         min-height: 500px;
@@ -856,6 +864,14 @@
         background-position: center;
       }
 
+      .modal-image img,
+      .modal-image {
+        /* if using img tag or background */
+        width: 100%;
+        display: block;
+      }
+
+      /* Details Panel */
       .modal-details {
         flex: 1;
         padding: 40px;
@@ -880,6 +896,7 @@
         margin-bottom: 30px;
       }
 
+      /* Specs Grid */
       .specs-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -904,9 +921,15 @@
         font-weight: 600;
       }
 
+      /* Actions */
       .modal-actions {
         display: flex;
         gap: 15px;
+        position: sticky; /* stick to bottom */
+        bottom: 0;
+        padding: 20px;
+        background: var(--light);
+        z-index: 10;
       }
 
       .whatsapp-btn {
@@ -924,6 +947,53 @@
         font-size: 1.1rem;
         cursor: pointer;
         transition: var(--transition);
+      }
+
+      /* === Responsive Tweaks === */
+      @media (max-width: 768px) {
+        /* Stack content vertically */
+        .modal-content {
+          flex-direction: column;
+        }
+
+        /* Flexible image height */
+        .modal-image {
+          min-height: 200px;
+          height: 30vh;
+        }
+
+        /* Adjust padding */
+        .modal-details {
+          padding: 20px;
+        }
+
+        /* Buttons full width */
+        .modal-actions {
+          padding: 15px 20px;
+        }
+
+        .whatsapp-btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .modal-header .modal-title {
+          font-size: 1.6rem;
+        }
+        .close-modal {
+          font-size: 1.4rem;
+        }
+        .modal-price {
+          font-size: 1.6rem;
+        }
+        .modal-description {
+          font-size: 0.9rem;
+        }
+        .specs-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       .whatsapp-btn:hover {
