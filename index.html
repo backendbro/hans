@@ -702,6 +702,25 @@
       }
 
       /* Footer */
+      .newsletter-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 100%;
+      }
+
+      .newsletter-form input {
+        flex: 1 1 auto; /* grow and shrink as needed */
+        min-width: 0; /* allow it to get really small */
+        padding: 12px;
+        box-sizing: border-box;
+      }
+
+      .newsletter-form .btn {
+        flex: 0 0 auto; /* stay at its intrinsic width */
+        white-space: nowrap; /* don’t wrap the text */
+      }
+
       footer {
         background: var(--dark);
         color: var(--light);
@@ -1604,7 +1623,7 @@
         </div>
         <div class="copyright">
           <p>
-            &copy; 2023 LuxeDrive Automotive. All Rights Reserved. Designed with
+            &copy; 2025 LuxeDrive Automotive. All Rights Reserved. Designed with
             <i class="fas fa-heart" style="color: var(--primary)"></i>
           </p>
         </div>
