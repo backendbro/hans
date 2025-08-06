@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LuxeDrive | Premium Automotive & Solar Solutions</title>
+    <title>Hans Global Hub | Premium Automotive & Solar Solutions</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🚗</text></svg>"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -44,6 +49,48 @@
       h5 {
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        animation: pulse 2s infinite;
+      }
+
+      .whatsapp-float:hover {
+        background-color: #128c7e;
+        transform: scale(1.1);
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .whatsapp-float i {
+        margin-top: 5px;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
       }
 
       .container {
@@ -162,6 +209,13 @@
 
       .logo-text span {
         color: var(--primary);
+      }
+
+      /* Replace the previous .logo-icon and .logo-text with this */
+      .logo img.logo-image {
+        height: 50px; /* Adjust size as needed */
+        width: auto;
+        display: block;
       }
 
       nav ul {
@@ -1190,9 +1244,16 @@
       <div class="container header-container">
         <div class="logo">
           <div class="logo-icon">
-            <i class="fas fa-car"></i>
+            <!-- <i class="fas fa-car"></i> -->
+            <img
+              src="/images/hans_logo.png"
+              alt="Hans Logistics Hub Logo"
+              class="logo-image"
+            />
           </div>
-          <div class="logo-text">Luxe<span>Drive</span></div>
+          <div class="logo-text">
+            Hans<span>Logistics</span><span>Hub</span>
+          </div>
         </div>
         <button class="hamburger" id="hamburger">
           <span></span>
@@ -1225,8 +1286,8 @@
           <h1>Premium <span>Automotive</span> & Solar Excellence</h1>
           <p>
             Discover the finest collection of luxury vehicles and cutting-edge
-            solar solutions. Experience unparalleled performance and
-            sustainability in one place.
+            solar solutions at Hans Global Hub. Experience unparalleled
+            performance and sustainability in one place.
           </p>
           <div class="hero-btns">
             <a href="#vehicles" class="btn">Explore Vehicles</a>
@@ -1411,9 +1472,9 @@
           <div class="review-card">
             <div class="review-content">
               <p>
-                "The team at LuxeDrive helped me find the perfect luxury SUV.
-                Their attention to detail and customer service was exceptional.
-                Highly recommend!"
+                The team at Hans Logistics Hub helped me find the perfect luxury
+                SUV. Their attention to detail and customer service was
+                exceptional. Highly recommend!"
               </p>
             </div>
             <div class="reviewer">
@@ -1467,9 +1528,9 @@
           <div class="review-card">
             <div class="review-content">
               <p>
-                "The maintenance service at LuxeDrive is top-notch. They took
-                care of everything and even provided a loaner vehicle. Five-star
-                experience!"
+                "The maintenance service at Hans Logistics Hub is top-notch.
+                They took care of everything and even provided a loaner vehicle.
+                Five-star experience!"
               </p>
             </div>
             <div class="reviewer">
@@ -1515,7 +1576,10 @@
               </div>
               <div>
                 <h4>Our Location</h4>
-                <p>123 Luxury Avenue, Beverly Hills, CA 90210</p>
+                <p>
+                  PO Box 7075, One UAQ AL Ittihad Street, AL Barqaa, Umm AI
+                  Quwain
+                </p>
               </div>
             </div>
             <div class="contact-item">
@@ -1524,7 +1588,7 @@
               </div>
               <div>
                 <h4>Phone Number</h4>
-                <p>+1 (888) 555-1234</p>
+                <p>+971 55 951 8090</p>
               </div>
             </div>
             <div class="contact-item">
@@ -1533,7 +1597,7 @@
               </div>
               <div>
                 <h4>Email Address</h4>
-                <p>info@luxedrive.com</p>
+                <p>shop@hansglobalhub.com</p>
               </div>
             </div>
             <div class="contact-item">
@@ -1577,7 +1641,9 @@
               <div class="logo-icon">
                 <i class="fas fa-car"></i>
               </div>
-              <div class="logo-text">Luxe<span>Drive</span></div>
+              <div class="logo-text" style="color: white">
+                Hans<span>LogisticsHub</span>
+              </div>
             </div>
             <p>
               Premium automotive solutions and cutting-edge solar technology for
@@ -1623,7 +1689,7 @@
         </div>
         <div class="copyright">
           <p>
-            &copy; 2025 LuxeDrive Automotive. All Rights Reserved. Designed with
+            &copy; 2025 Hans Logistics Hub. All Rights Reserved. Designed with
             <i class="fas fa-heart" style="color: var(--primary)"></i>
           </p>
         </div>
@@ -1634,7 +1700,7 @@
     <div class="modal-overlay">
       <div class="modal">
         <div class="modal-header">
-          <h2 class="modal-title">Tesla Model S Plaid</h2>
+          <h2 class="modal-title">2025 Winnebago REVEL SPORT 44</h2>
           <button class="close-modal">
             <i class="fas fa-times"></i>
           </button>
@@ -1643,42 +1709,45 @@
           <div
             class="modal-image"
             style="
-              background-image: url('https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+              background-image: url('https://cdn-media.tilabs.io/v1/media/67fd46a89521656751518ca5.jpg?width=1024&height=768&quality=70&upsize=true');
             "
           ></div>
           <div class="modal-details">
-            <div class="modal-price">$129,990</div>
+            <div class="modal-price">$69,995</div>
             <p class="modal-description">
-              The Tesla Model S Plaid redefines automotive performance. With a
-              tri-motor setup producing over 1,000 horsepower, it accelerates
-              from 0-60 mph in under 2 seconds, making it the quickest
-              production car ever built.
+              2025 Winnebago Revel 44N AWD Sprinter with only 4K miles, dealer
+              demo, never camped in — discounted at $69,995. Built on a
+              Mercedes-Benz turbo diesel chassis with advanced safety tech,
+              4.1kWh lithium system, solar, inverter, wet bath, power lift bed,
+              and high-end interior. Includes touchscreen infotainment, A/C,
+              heating, Wi-Fi, and more. Fully inspected, serviced, and detailed
+              — trades and financing available at Conejo RV.
             </p>
 
             <div class="specs-grid">
               <div class="spec">
-                <div class="spec-title">RANGE</div>
-                <div class="spec-value">396 miles</div>
+                <div class="spec-title">ENGINE</div>
+                <div class="spec-value">2.0L Turbo-Diesel</div>
               </div>
               <div class="spec">
-                <div class="spec-title">TOP SPEED</div>
-                <div class="spec-value">200 mph</div>
+                <div class="spec-title">TRANSMISSION</div>
+                <div class="spec-value">9-Speed Automatic</div>
               </div>
               <div class="spec">
-                <div class="spec-title">POWER</div>
-                <div class="spec-value">1,020 hp</div>
+                <div class="spec-title">BATTERY</div>
+                <div class="spec-value">4.1 kWh Lithium</div>
               </div>
               <div class="spec">
-                <div class="spec-title">0-60 MPH</div>
-                <div class="spec-value">1.99 sec</div>
+                <div class="spec-title">SOLAR</div>
+                <div class="spec-value">215 Watts</div>
               </div>
               <div class="spec">
-                <div class="spec-title">CHARGING</div>
-                <div class="spec-value">200 mi in 15 min</div>
+                <div class="spec-title">INVERTER</div>
+                <div class="spec-value">2,000 Watts</div>
               </div>
               <div class="spec">
                 <div class="spec-title">SEATING</div>
-                <div class="spec-value">5 Adults</div>
+                <div class="spec-value">Up to 4 Adults</div>
               </div>
             </div>
 
@@ -1692,78 +1761,388 @@
       </div>
     </div>
 
+    <a
+      href="https://wa.me/971559518090?text=Hello%2C%20I%27m%20interested%20in%20your%20services"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script>
       // Vehicle data
       const vehicles = [
         {
           id: 1,
-          name: "Tesla Model S Plaid",
-          price: "$129,990",
+          name: "2025 Winnebago Revel 44N AWD",
+          price: "$69,995",
           image:
-            "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-          features: ["1,020 hp", "396 mi range", "0-60: 1.99s"],
+            "https://cdn-media.tilabs.io/v1/media/67fd46a89521656751518ca5.jpg?width=1024&height=768&quality=70&upsize=true", // Replace with an actual image of the RV if available
+          features: ["4.1 kWh Lithium", "215W Solar", "2.0L Turbo Diesel"],
           description:
-            "The quickest production car ever built with tri-motor setup",
+            "Built on a Mercedes AWD Sprinter chassis with premium lithium power, solar, wet bath, and flexible living space. Only 4K miles – dealer demo.",
           specs: {
-            range: "396 miles",
-            topSpeed: "200 mph",
-            power: "1,020 hp",
-            acceleration: "1.99 sec",
-            charging: "200 mi in 15 min",
-            seating: "5 Adults",
+            engine: "2.0L Turbo Diesel",
+            transmission: "9-Speed Automatic",
+            battery: "4.1 kWh Lithium",
+            solar: "215 Watts",
+            inverter: "2,000 Watts",
+            seating: "Up to 4 Adults",
           },
         },
+
         {
           id: 2,
-          name: "Porsche Taycan Turbo S",
-          price: "$186,350",
+          name: "2024 Winnebago ROAM",
+          price: "$50,995",
           image:
-            "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-          features: ["750 hp", "212 mph", "Performance Battery+"],
+            "https://i.pinimg.com/1200x/a2/3a/0a/a23a0abfb2f3c9650207ff3f97b4a200.jpg",
+          features: [
+            "Accessible RV",
+            "Flex Bed System",
+            "3.6kWh Lithium Battery",
+          ],
           description:
-            "Porsche's flagship electric sports sedan with track capabilities",
+            "The Winnebago ROAM combines accessibility, comfort, and freedom in a compact Class B RV built on the Ram ProMaster chassis. Ideal for city exploring or cross-country travel.",
           specs: {
-            range: "222 miles",
-            topSpeed: "162 mph",
-            power: "750 hp",
-            acceleration: "2.6 sec",
-            charging: "270 kW max",
-            seating: "4 Adults",
-          },
-        },
-        {
-          id: 3,
-          name: "Audi e-tron GT",
-          price: "$102,400",
-          image:
-            "https://i.pinimg.com/1200x/39/03/aa/3903aa74a47ef2bafffa55feb43331e8.jpg",
-          features: ["522 hp", "238 mi range", "Quattro AWD"],
-          description:
-            "Audi's grand tourer with stunning design and performance",
-          specs: {
-            range: "238 miles",
-            topSpeed: "152 mph",
-            power: "522 hp",
-            acceleration: "3.9 sec",
-            charging: "270 kW max",
-            seating: "4 Adults",
+            chassis: "RAM ProMaster 3500",
+            engine: "3.6L V6 Gas",
+            battery: "3.6 kWh Lithium",
+            seating: "Up to 4 Adults",
+            bed: "Flex Bed System",
+            accessibility: "Wheelchair Lift + Accessible Wet Bath",
           },
         },
         {
           id: 4,
-          name: "Rolls royce wraith",
-          price: "$169,000",
+          name: "2025 OGV Luxury Coach V-CRUISE 10OBA",
+          price: "$150,400",
           image:
-            "https://i.pinimg.com/1200x/80/c7/a9/80c7a96ce140aa8440d900909ff93473.jpg",
-          features: ["1,111 hp", "520 mi range", "DreamDrive Pro"],
-          description: "Ultra-luxury electric sedan with record-breaking range",
+            "https://cdn-media.tilabs.io/v1/media/6723dbde288d7c4b3c37d393.jpg?width=1024&height=768&quality=70&upsize=true",
+          features: [
+            "Luxury Interior",
+            "Full-Sized Bathroom",
+            "Automated Smart Controls",
+          ],
+          description:
+            "The 2025 OGV V-CRUISE 10OBA offers a true luxury living experience on wheels, blending elegance, comfort, and technology in a premium motorcoach built for elite travel.",
           specs: {
-            range: "520 miles",
-            topSpeed: "168 mph",
-            power: "1,111 hp",
-            acceleration: "2.5 sec",
-            charging: "300 kW max",
+            chassis: "Freightliner XC-Series",
+            engine: "Cummins ISL 8.9L Turbo Diesel",
+            transmission: "Allison 3000 MH 6-Speed Automatic",
+            battery: "10 kWh Lithium System",
+            solar: "600 Watts",
+            seating: "Up to 6 Adults",
+            bathroom: "Full-Size Residential with Rain Shower",
+            features:
+              "Hydraulic Slides, Theater Seating, Smart Home Integration",
+          },
+        },
+
+        {
+          id: 4,
+          name: "2018 Airstream Interstate Grand Tour EXT 3500",
+          price: "$159,000",
+          image:
+            "https://cdn-media.tilabs.io/v1/media/67d05f8ed94b74730177f5ff.jpg?width=1024&height=768&quality=70&upsize=true",
+          features: [
+            "Mercedes-Benz Diesel",
+            "Extended Interior Space",
+            "Premium Galley",
+          ],
+          description:
+            "The 2018 Airstream Interstate Grand Tour EXT 3500 is the perfect balance of performance and luxury. Built on the Mercedes-Benz Sprinter chassis, it's ideal for long-range travel with high-end comfort and craftsmanship.",
+          specs: {
+            chassis: "Mercedes-Benz Sprinter 3500 EXT",
+            engine: "3.0L V6 Turbo Diesel",
+            transmission: "5-Speed Automatic",
+            battery: "2.5 kWh AGM Battery System",
+            solar: "300 Watts",
+            seating: "Up to 2 Adults",
+            bed: "Power Sofa Converts to Bed",
+            kitchen: "Corian Countertops, Microwave, 2-Burner Stove",
+            bathroom: "Wet Bath with Toilet, Sink & Shower",
+          },
+        },
+        {
+          id: 5,
+          name: "2021 Airstream Interstate 24GL",
+          price: "$89,000",
+          image:
+            "https://cdn-media.tilabs.io/v1/media/6871370eec29860fcc4f99ff.jpg?width=1024&height=768&quality=70&upsize=true",
+          features: [
+            "Up to 9 Passengers",
+            "Mercedes-Benz Sprinter",
+            "Luxurious Touring Coach",
+          ],
+          description:
+            "The 2021 Airstream Interstate 24GL is a luxury Class B motorhome built on a Mercedes-Benz Sprinter chassis, offering top-tier comfort, safety features, and entertainment systems — perfect for both travel and tailgating.",
+          specs: {
+            chassis: "Mercedes-Benz Sprinter 3500 EXT",
+            engine: "3.0L V6 Turbo Diesel",
+            transmission: "7-Speed Automatic",
+            battery: "Advanced Lithium System",
+            solar: "300 Watts",
+            seating: "Up to 9 Adults",
+            bed: "Convertible Rear Sofa Bed",
+            kitchen: "Microwave, 2-Burner Gas Stove, Sink",
+            bathroom: "Wet Bath with Shower, Sink, Toilet",
+          },
+        },
+        {
+          id: 7,
+          name: "2026 Thor Motor Coach TIBURON 24XL",
+          price: "$169,950",
+          image:
+            "https://cdn-media.tilabs.io/v1/media/687137320435447ce06d2de3.jpg?width=1024&height=768&quality=70&upsize=true",
+          features: [
+            "All-Wheel Drive",
+            "Mercedes-Benz Turbo Diesel",
+            "Slide-Out Full Wall",
+          ],
+          description:
+            "The 2026 Thor Tiburon 24XL combines elegant design with Mercedes-Benz performance. This compact luxury Class C RV includes a full wall slide-out, diesel efficiency, and premium living space with modern tech.",
+          specs: {
+            chassis: "Mercedes-Benz Sprinter AWD",
+            engine: "3.0L V6 Turbo Diesel",
+            transmission: "7-Speed Automatic",
+            slideout: "Full Wall Slide",
+            battery: "Lithium House Battery",
+            solar: "100 Watts",
+            seating: "4 Adults",
+            bed: "Queen Murphy Bed",
+            kitchen: "Two-Burner Gas Cooktop, Convection Microwave, Fridge",
+            bathroom: "Rear Wet Bath with Shower and Vanity",
+          },
+        },
+        {
+          id: 7,
+          name: "2026 Winnebago REVEL SPORT 44C - ATH EDITION",
+          price: "$174,500",
+          image:
+            "https://cdn-media.tilabs.io/v1/media/6883c74d5022c8703f29c4be.jpg?width=1024&height=768&quality=70&upsize=true",
+          features: [
+            "All-Terrain AWD",
+            "Lithionics Lithium System",
+            "Power Lift Bed",
+          ],
+          description:
+            "The 2026 Winnebago Revel Sport 44C ATH Edition is designed for rugged adventure and comfort. Built on a Mercedes AWD Sprinter chassis, it includes a powerful lithium system, solar, and all-weather insulation.",
+          specs: {
+            chassis: "Mercedes-Benz AWD Sprinter",
+            engine: "2.0L High-Output Turbo Diesel",
+            transmission: "9-Speed Automatic",
+            battery: "4.1 kWh Lithionics Lithium",
+            solar: "215 Watts",
+            inverter: "2,000W Inverter/Charger",
+            bed: "Power Lift Bed with Gear Garage",
+            bathroom: "Wet Bath with Cassette Toilet",
+            kitchen: "Induction Cooktop, Fridge, Pantry",
+            seating: "4 Adults",
+          },
+        },
+        {
+          id: 8,
+          name: "2021 Thor Motor Coach GEMINI 23TW",
+          price: "$94,990",
+          image:
+            "https://cdn-media.tilabs.io/v1/media/685e2a2b0aa5a500167ea636.jpg?width=1024&height=768&quality=70&upsize=true",
+          features: ["All-Wheel Drive", "Murphy Bed", "Diesel Powered"],
+          description:
+            "Compact and versatile, the 2021 Gemini 23TW from Thor Motor Coach offers AWD capability, modern interior design, and smart use of space. Perfect for couples or solo travelers.",
+          specs: {
+            chassis: "Ford Transit AWD",
+            engine: "3.2L Power Stroke I5 Turbo Diesel",
+            transmission: "6-Speed Automatic",
+            length: "23 ft 6 in",
+            bed: "Murphy Bed with Flip-Up Mattress",
+            bathroom: "Rear Full Bath",
+            kitchen: "Refrigerator, Microwave, Induction Cooktop",
+            seating: "2-3 Adults",
+            solar: "100W Solar Charging System",
+            gvwr: "10,360 lbs",
+          },
+        },
+        {
+          id: 9,
+          name: "2021 Storyteller Overland Stealth Mode",
+          price: "$109,990",
+          image:
+            "https://cdn-media.tilabs.io/v1/media/672e3f5607785245da0d35d4.jpg?width=1024&height=768&quality=70&upsize=true",
+          features: ["Lithium Power System", "AWD Sprinter", "Adventure Ready"],
+          description:
+            "The 2021 Stealth Mode by Storyteller Overland is a rugged, off-grid adventure van built on a Mercedes-Benz AWD Sprinter chassis, equipped with a Volta lithium power system and flexible interior living space.",
+          specs: {
+            chassis: "Mercedes-Benz Sprinter 144 AWD",
+            engine: "3.0L V6 Turbo Diesel",
+            transmission: "7-Speed Automatic",
+            length: "19 ft 6 in",
+            powerSystem: "Volta 12kWh Lithium Energy Storage System",
+            solar: "90W Roof-Mounted Solar Panel",
+            bed: "Convertible GrooveLounge + Dreamweaver Bed",
+            bathroom: "Halo Shower™ System",
+            kitchen: "Induction Cooktop, Sink, Fridge/Freezer",
+            seating: "4 Adults",
+            gvwr: "9,050 lbs",
+          },
+        },
+        {
+          id: 10,
+          name: "Toyota Hilux Adventure 4.0L",
+          price: "$32,500",
+          image:
+            "https://www.dubicars.com/images/28e34b/w_1300x760/al-kuwait-used-cars-exhibition-llc/feaada3c-6cd0-4dc5-95ff-909b1783f1e4.jpeg",
+          features: ["4.0L V6 Engine", "4WD Off-Road", "High Ground Clearance"],
+          description:
+            "The Toyota Hilux Adventure 4.0L is a rugged off-road pickup truck with a powerful V6 engine, advanced 4WD system, and enhanced ground clearance for extreme terrain.",
+          specs: {
+            engine: "4.0L V6 Petrol",
+            power: "235 hp",
+            transmission: "6-Speed Automatic",
+            drivetrain: "4WD",
+            torque: "376 Nm",
+            towingCapacity: "3,500 kg",
+            groundClearance: "286 mm",
+            fuelCapacity: "80 L",
             seating: "5 Adults",
+            bedLength: "5 ft",
+            safety: "Toyota Safety Sense, 7 Airbags",
+          },
+        },
+        {
+          id: 11,
+          name: "Toyota Hilux 4x4",
+          price: "$28,500",
+          image:
+            "https://www.dubicars.com/images/571546/w_1300x760/autocars/25234a80-08ef-4563-99a7-8e82fe97c904.jpeg",
+          features: [
+            "4WD Capability",
+            "Turbo Diesel Engine",
+            "Off-Road Suspension",
+          ],
+          description:
+            "Toyota Hilux 4x4 is a legendary workhorse known for its toughness, off-road strength, and reliable turbo diesel engine—perfect for adventure or utility.",
+          specs: {
+            engine: "2.8L Turbo Diesel",
+            power: "201 hp",
+            transmission: "6-Speed Automatic",
+            drivetrain: "4WD",
+            torque: "500 Nm",
+            towingCapacity: "3,500 kg",
+            groundClearance: "279 mm",
+            fuelCapacity: "80 L",
+            seating: "5 Adults",
+            bedLength: "5 ft",
+            safety: "Lane Assist, Cruise Control, 7 Airbags",
+          },
+        },
+        {
+          id: 12,
+          name: "Toyota Hilux 2024 GR SPORT V6 4.0L",
+          price: "$36,700",
+          image:
+            "https://www.dubicars.com/images/dd1c72/w_1300x760/unique-cars-fze/a44306ff-2635-4a63-8d88-0c60c6296bae.jpeg",
+          features: [
+            "GR Sport Styling",
+            "4.0L V6 Engine",
+            "Off-Road Suspension",
+          ],
+          description:
+            "The 2024 Toyota Hilux GR SPORT V6 4.0L combines motorsport-inspired design with exceptional power, advanced 4WD capability, and rugged off-road enhancements.",
+          specs: {
+            engine: "4.0L V6 Petrol",
+            power: "235 hp",
+            transmission: "6-Speed Automatic",
+            drivetrain: "4WD",
+            torque: "375 Nm",
+            towingCapacity: "3,500 kg",
+            groundClearance: "310 mm",
+            fuelCapacity: "80 L",
+            seating: "5 Adults",
+            bedLength: "5 ft",
+            safety: "Pre-Collision System, Lane Departure Alert, 7 Airbags",
+          },
+        },
+        {
+          id: 13,
+          name: "Toyota Hilux",
+          price: "$22,500",
+          image:
+            "https://www.dubicars.com/images/6b01e1/w_1300x760/target-motors-3/3da82559-1da8-47de-8f43-82cfa1febba2.jpg",
+          features: [
+            "Reliable 4x4 Utility",
+            "2.8L Turbo Diesel",
+            "Durable Bed",
+          ],
+          description:
+            "The Toyota Hilux is a legendary pickup truck known for its reliability, toughness, and off-road capability, built to handle both work and adventure.",
+          specs: {
+            engine: "2.8L 4-Cylinder Turbo Diesel",
+            power: "201 hp",
+            transmission: "6-Speed Automatic",
+            drivetrain: "4WD",
+            torque: "500 Nm",
+            towingCapacity: "3,500 kg",
+            groundClearance: "310 mm",
+            fuelCapacity: "80 L",
+            seating: "5 Adults",
+            bedLength: "5 ft",
+            safety: "Toyota Safety Sense, 7 Airbags",
+          },
+        },
+        {
+          id: 14,
+          name: "Toyota Hilux GR Sport 4.0L",
+          price: "$29,990",
+          image:
+            "https://www.dubicars.com/images/330475/w_1300x760/aaa-motors-fze/faad2b50-85c0-4991-b790-e3a7f41ff190.jpeg",
+          features: [
+            "4.0L V6 Engine",
+            "GR Sport Design",
+            "Off-Road Suspension",
+          ],
+          description:
+            "The Toyota Hilux GR Sport 4.0L combines bold design with legendary toughness, powered by a V6 engine and enhanced with Gazoo Racing performance and styling.",
+          specs: {
+            engine: "4.0L V6 Petrol",
+            power: "235 hp",
+            transmission: "6-Speed Automatic",
+            drivetrain: "4WD",
+            torque: "375 Nm",
+            towingCapacity: "3,500 kg",
+            groundClearance: "310 mm",
+            fuelCapacity: "80 L",
+            seating: "5 Adults",
+            bedLength: "5 ft",
+            safety: "Toyota Safety Sense, 7 Airbags",
+          },
+        },
+        {
+          id: 15,
+          name: "Toyota Hilux DC 2.7L SR5 MT 4x4 2024 - LHD",
+          price: "$19,500",
+          image:
+            "https://www.dubicars.com/images/7da1eb/w_1300x760/target-motors-3/7e8a7ec9-1a5c-449b-bd55-d4eaa75ba02b.jpg",
+          features: [
+            "2.7L Petrol Engine",
+            "Manual Transmission",
+            "4x4 Capability",
+          ],
+          description:
+            "A rugged and reliable double-cabin pickup with a 2.7L petrol engine, 4x4 drivetrain, and manual transmission. Ideal for both work and adventure in tough terrain.",
+          specs: {
+            engine: "2.7L 4-Cylinder Petrol",
+            power: "164 hp",
+            transmission: "5-Speed Manual",
+            drivetrain: "4WD",
+            torque: "245 Nm",
+            towingCapacity: "2,500 kg",
+            groundClearance: "286 mm",
+            fuelCapacity: "80 L",
+            seating: "5 Adults",
+            bedLength: "5 ft",
+            safety: "ABS, Brake Assist, Dual Airbags",
           },
         },
       ];
@@ -1849,26 +2228,27 @@
           const card = document.createElement("div");
           card.className = "vehicle-card";
           card.innerHTML = `
-                    <div class="vehicle-image" style="background-image: url('${
-                      vehicle.image
-                    }')"></div>
-                    <div class="vehicle-content">
-                        <h3 class="vehicle-title">${vehicle.name}</h3>
-                        <div class="vehicle-price">${vehicle.price}</div>
-                        <div class="vehicle-features">
-                            ${vehicle.features
-                              .map(
-                                (feat) => `<div class="feature">${feat}</div>`
-                              )
-                              .join("")}
-                        </div>
-                        <button class="btn view-details" data-id="${
-                          vehicle.id
-                        }" data-type="vehicle">
-                            View Details
-                        </button>
-                    </div>
-                `;
+                          <div class="vehicle-image" style="background-image: url('${
+                            vehicle.image
+                          }')"></div>
+                          <div class="vehicle-content">
+                              <h3 class="vehicle-title">${vehicle.name}</h3>
+                              <div class="vehicle-price">${vehicle.price}</div>
+                              <div class="vehicle-features">
+                                  ${vehicle.features
+                                    .map(
+                                      (feat) =>
+                                        `<div class="feature">${feat}</div>`
+                                    )
+                                    .join("")}
+                              </div>
+                              <button class="btn view-details" data-id="${
+                                vehicle.id
+                              }" data-type="vehicle">
+                                  View Details
+                              </button>
+                          </div>
+                      `;
           container.appendChild(card);
         });
       }
@@ -1882,26 +2262,27 @@
           const card = document.createElement("div");
           card.className = "solar-card";
           card.innerHTML = `
-                    <div class="solar-image" style="background-image: url('${
-                      panel.image
-                    }')"></div>
-                    <div class="solar-content">
-                        <h3 class="solar-title">${panel.name}</h3>
-                        <div class="solar-price">${panel.price}</div>
-                        <div class="solar-features">
-                            ${panel.features
-                              .map(
-                                (feat) => `<div class="feature">${feat}</div>`
-                              )
-                              .join("")}
-                        </div>
-                        <button class="btn view-details" data-id="${
-                          panel.id
-                        }" data-type="solar">
-                            View Details
-                        </button>
-                    </div>
-                `;
+                          <div class="solar-image" style="background-image: url('${
+                            panel.image
+                          }')"></div>
+                          <div class="solar-content">
+                              <h3 class="solar-title">${panel.name}</h3>
+                              <div class="solar-price">${panel.price}</div>
+                              <div class="solar-features">
+                                  ${panel.features
+                                    .map(
+                                      (feat) =>
+                                        `<div class="feature">${feat}</div>`
+                                    )
+                                    .join("")}
+                              </div>
+                              <button class="btn view-details" data-id="${
+                                panel.id
+                              }" data-type="solar">
+                                  View Details
+                              </button>
+                          </div>
+                      `;
           container.appendChild(card);
         });
       }
@@ -1933,9 +2314,9 @@
           const spec = document.createElement("div");
           spec.className = "spec";
           spec.innerHTML = `
-                    <div class="spec-title">${key.toUpperCase()}</div>
-                    <div class="spec-value">${value}</div>
-                `;
+                          <div class="spec-title">${key.toUpperCase()}</div>
+                          <div class="spec-value">${value}</div>
+                      `;
           specsGrid.appendChild(spec);
         }
 
