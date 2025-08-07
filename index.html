@@ -1369,6 +1369,12 @@
         <div class="vehicles-grid" id="vehicles-container">
           <!-- Vehicles will be populated by JavaScript -->
         </div>
+        <div
+          class="see-more-wrapper"
+          style="text-align: center; margin-top: 2rem"
+        >
+          <button id="load-more" class="btn">See More</button>
+        </div>
       </div>
     </section>
 
@@ -1902,7 +1908,190 @@
 
     <script>
       // Vehicle data
+      document.getElementById("load-more").addEventListener("click", () => {
+        currentPage++;
+        renderVehicles();
+      });
       const vehicles = [
+        {
+          id: 6,
+          name: "2024 Toyota Coaster LX",
+          price: "$32,500",
+          image:
+            "https://i.pinimg.com/1200x/0c/c3/2c/0cc32c4e3916e8ac4c5d439f623a5461.jpg",
+          features: ["2.8L Turbo Diesel", "18 Seats", "Air Suspension"],
+          description:
+            "Reliable mid-size bus perfect for city and intercity routes, featuring comfortable seating and smooth ride quality.",
+          specs: {
+            chassis: "Toyota Coaster",
+            engine: "2.8L 4-Cylinder Turbo Diesel",
+            transmission: "6-Speed Automatic",
+            seating: "18 Adults",
+            suspension: "Front: Coil / Rear: Air",
+            airConditioning: "Roof-Mounted Package",
+          },
+        },
+        {
+          id: 7,
+          name: "2024 Toyota Hiace Commuter GL",
+          price: "$25,200",
+          image:
+            "https://i.pinimg.com/1200x/85/7c/e0/857ce098c12068221e3e09dc5e14e3ff.jpg",
+          features: ["3.0L Turbo Diesel", "15 Seats", "High Roof"],
+          description:
+            "Spacious and versatile commuter van, optimized for passenger comfort with generous headroom and durable interiors.",
+          specs: {
+            chassis: "Toyota Hiace Commuter",
+            engine: "1GD-FTV 3.0L Turbo Diesel",
+            transmission: "6-Speed Manual",
+            seating: "15 Adults",
+            roof: "High-Roof Configuration",
+            safety: "ABS, EBD, Dual Airbags",
+          },
+        },
+        {
+          id: 8,
+          name: "2023 Nissan Civilian DX",
+          price: "$38,900",
+          image:
+            "https://image-cdn.beforward.jp/large/202201/2735324/BK238019_f79116.JPG",
+          features: ["140 hp Diesel", "21 Seats", "Electric Sliding Door"],
+          description:
+            "Compact city bus built on Nissan’s proven chassis, featuring easy boarding and efficient fuel economy.",
+          specs: {
+            chassis: "Nissan Civilian",
+            engine: "YD25 2.5L Turbo Diesel",
+            transmission: "5-Speed Automatic",
+            seating: "21 Adults",
+            doors: "Electric Sliding",
+            airConditioning: "Roof-Mounted Condenser",
+          },
+        },
+        {
+          id: 9,
+          name: "2024 Mercedes-Benz Sprinter Passenger 516 CDI",
+          price: "$32,300",
+          image:
+            "https://img.linemedia.com/img/s/passenger-van-Mercedes-Benz-Sprinter-516-CDI-School-bus-23-seats-automatic---1729857344117559128_common--24102514503057305700.jpg",
+          features: ["519 hp Turbo Diesel", "19 Seats", "Adaptive ESP"],
+          description:
+            "Premium passenger van with advanced safety systems and flexible seating, ideal for executive transport.",
+          specs: {
+            chassis: "Sprinter 516 CDI",
+            engine: "2.1L 4-Cylinder Turbo Diesel",
+            transmission: "7G-Tronic Automatic",
+            seating: "19 Adults",
+            safety: "Adaptive ESP, Crosswind Assist",
+            interior: "Leather-Finish Seats",
+          },
+        },
+        {
+          id: 10,
+          name: "2024 Toyota Coaster Super Custom",
+          price: "$28,750",
+          image:
+            "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification34-798x466.jpg",
+          features: ["2.8L Diesel", "23 Seats", "Luxury Interior"],
+          description:
+            "High-spec Coaster with premium upholstery, LED lighting, and USB charging ports at every seat.",
+          specs: {
+            chassis: "Coaster Super Custom",
+            engine: "2.8L 4-Cylinder Turbo Diesel",
+            transmission: "6-Speed Automatic",
+            seating: "23 Adults",
+            interior: "Leatherette, LED Lighting",
+            tech: "Individual USB Ports",
+          },
+        },
+        {
+          id: 11,
+          name: "2024 Mitsubishi Rosa Deluxe",
+          price: "$25,800",
+          image:
+            "https://steerwellauto.com/wp-content/uploads/2024/09/1-4-1024x720.jpg",
+          features: ["2.9L Diesel", "25 Seats", "Rear Luggage Compartment"],
+          description:
+            "Spacious 25-seat bus with generous luggage space and robust build for long-distance travel.",
+          specs: {
+            chassis: "Mitsubishi Rosa",
+            engine: "4D34-2AT5 2.9L Turbo Diesel",
+            transmission: "5-Speed Manual",
+            seating: "25 Adults",
+            luggage: "Rear Compartment 1.2m³",
+            suspension: "Leaf Spring",
+          },
+        },
+        {
+          id: 12,
+          name: "2023 Iveco Daily Minibus",
+          price: "$39,900",
+          image:
+            "https://bluesky-cogcms.cdn.imgeng.in/media/2kpnlgot/daily-minibus.jpg",
+          features: ["170 hp Diesel", "16 Seats", "Low-Floor Access"],
+          description:
+            "Versatile minibus with low-floor design for easy boarding, ideal for shuttle and airport services.",
+          specs: {
+            chassis: "Iveco Daily",
+            engine: "3.0L 4-Cylinder Turbo Diesel",
+            transmission: "6-Speed Manual",
+            seating: "16 Adults",
+            access: "Low-Floor",
+            doors: "Wide Sliding Door",
+          },
+        },
+        {
+          id: 13,
+          name: "2024 Toyota Hiace Grand Cabin",
+          price: "$18,300",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLCDl92NKnmYhv6NjL1IEsdzfXetvKZu0hkA&s",
+          features: ["2.8L Turbo Diesel", "13 Seats", "Executive Layout"],
+          description:
+            "Executive-style Hiace with captain chairs, woodgrain trim, and tinted privacy glass.",
+          specs: {
+            chassis: "Hiace Grand Cabin",
+            engine: "1GD-FTV 2.8L Turbo Diesel",
+            transmission: "6-Speed Automatic",
+            seating: "13 Adults",
+            interior: "Captain Chairs, Woodgrain",
+            safety: "Rear Parking Sensors",
+          },
+        },
+        {
+          id: 14,
+          name: "2024 Toyota Coaster Eco Express",
+          price: "$20,200",
+          image: "https://casauto.com/wp-content/uploads/2024/09/IMG_3597.jpg",
+          features: ["2.8L Diesel", "20 Seats", "Fuel-Efficient Tuning"],
+          description:
+            "Eco-tuned Coaster with enhanced fuel management systems and lightweight body panels.",
+          specs: {
+            chassis: "Coaster Eco Express",
+            engine: "2.8L 4-Cylinder Turbo Diesel",
+            transmission: "6-Speed Manual",
+            seating: "20 Adults",
+            eco: "Low-Resistance Tires",
+            weightReduction: "Aluminum Panels",
+          },
+        },
+        {
+          id: 15,
+          name: "2024 Toyota Hiace Super Commuter",
+          price: "$26,800",
+          image:
+            "https://gsat.jp/wp-content/uploads/2023/04/2023-Toyota-hiace-commuter-Super-long-GL-New-9.jpg",
+          features: ["3.0L Diesel", "15 Seats", "Premium Suspension"],
+          description:
+            "Super-commuter with upgraded shocks, noise insulation, and USB charging at every row.",
+          specs: {
+            chassis: "Hiace Super Commuter",
+            engine: "1GD-FTV 3.0L Turbo Diesel",
+            transmission: "6-Speed Automatic",
+            seating: "15 Adults",
+            suspension: "Premium Gas Shocks",
+            comfort: "Acoustic Insulation",
+          },
+        },
         {
           id: 1,
           name: "2025 Winnebago Revel 44N AWD",
@@ -2713,38 +2902,56 @@
         },
       ];
 
+      const vehiclesContainer = document.getElementById("vehicles-container");
+      const loadMoreBtn = document.getElementById("load-more");
+
+      const ITEMS_PER_PAGE = 9;
+      let currentPage = 0;
+
       // Render vehicles
       function renderVehicles() {
         const container = document.getElementById("vehicles-container");
-        container.innerHTML = "";
 
-        vehicles.forEach((vehicle) => {
+        // On first page, clear out any existing cards
+        if (currentPage === 0) {
+          container.innerHTML = "";
+        }
+
+        // Determine slice for this “page”
+        const start = currentPage * ITEMS_PER_PAGE;
+        const end = start + ITEMS_PER_PAGE;
+        const slice = vehicles.slice(start, end);
+
+        slice.forEach((vehicle) => {
           const card = document.createElement("div");
           card.className = "vehicle-card";
           card.innerHTML = `
-                          <div class="vehicle-image" style="background-image: url('${
-                            vehicle.image
-                          }')"></div>
-                          <div class="vehicle-content">
-                              <h3 class="vehicle-title">${vehicle.name}</h3>
-                              <div class="vehicle-price">${vehicle.price}</div>
-                              <div class="vehicle-features">
-                                  ${vehicle.features
-                                    .map(
-                                      (feat) =>
-                                        `<div class="feature">${feat}</div>`
-                                    )
-                                    .join("")}
-                              </div>
-                              <button class="btn view-details" data-id="${
-                                vehicle.id
-                              }" data-type="vehicle">
-                                  View Details
-                              </button>
-                          </div>
-                      `;
+        <div
+          class="vehicle-image"
+          style="background-image: url('${vehicle.image}')"></div>
+        <div class="vehicle-content">
+          <h3 class="vehicle-title">${vehicle.name}</h3>
+          <div class="vehicle-price">${vehicle.price}</div>
+          <div class="vehicle-features">
+            ${vehicle.features
+              .map((feat) => `<div class="feature">${feat}</div>`)
+              .join("")}
+          </div>
+          <button
+            class="btn view-details"
+            data-id="${vehicle.id}"
+            data-type="vehicle">
+            View Details
+          </button>
+        </div>
+      `;
           container.appendChild(card);
         });
+
+        const loadMoreBtn = document.getElementById("load-more");
+        if ((currentPage + 1) * ITEMS_PER_PAGE >= vehicles.length) {
+          loadMoreBtn.style.display = "none";
+        }
       }
 
       // Render solar panels
