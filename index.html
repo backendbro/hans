@@ -213,7 +213,6 @@
 
       .logo img.logo-image {
         height: 60px; /* Make it more prominent */
-
         width: 60px;
         display: block;
         object-fit: contain; /* Ensures no distortion */
@@ -283,6 +282,37 @@
         background: var(--dark);
         border-radius: 10px;
         transition: var(--transition);
+      }
+
+      /* Modified Header Styles */
+      header {
+        /* ... existing styles ... */
+        padding: 10px 0; /* Reduced from 20px */
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 80px; /* Fixed height for logo container */
+      }
+
+      .logo-icon {
+        display: flex; /* Ensures proper image containment */
+        align-items: center;
+        height: 100%; /* Takes full height of .logo */
+      }
+
+      .logo img.logo-image {
+        height: 100%; /* Takes full height of .logo-icon */
+        width: auto; /* Maintains aspect ratio */
+        max-height: 80px; /* Preents excessive growth */
+        /* ... other styles remain ... */
+      }
+
+      .logo-text {
+        /* ... existing styles ... */
+        align-self: center; /* Ensures vertical centering */
       }
 
       /* Hero Section */
