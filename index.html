@@ -211,11 +211,15 @@
         color: var(--primary);
       }
 
-      /* Replace the previous .logo-icon and .logo-text with this */
       .logo img.logo-image {
-        height: 50px; /* Adjust size as needed */
-        width: auto;
+        height: 60px; /* Make it more prominent */
+
+        width: 60px;
         display: block;
+        object-fit: contain; /* Ensures no distortion */
+        filter: drop-shadow(
+          0 1px 5px rgba(0, 0, 0, 0.2)
+        ); /* Slight pop effect */
       }
 
       nav ul {
@@ -1200,6 +1204,12 @@
         }
       }
 
+      @media (max-width: 640px) {
+        .logo-text {
+          display: none;
+        }
+      }
+
       @media (max-width: 576px) {
         .hero h1 {
           font-size: 2.5rem;
@@ -1246,7 +1256,7 @@
           <div class="logo-icon">
             <!-- <i class="fas fa-car"></i> -->
             <img
-              src="/images/hans_logo.png"
+              src="hans.png"
               alt="Hans Logistics Hub Logo"
               class="logo-image"
             />
