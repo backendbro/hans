@@ -5,11 +5,33 @@ document.getElementById("load-more").addEventListener("click", () => {
 });
 const vehicles = [
   {
+    id: 17,
+    name: "2024 Toyota Coaster LX",
+    price: "$36,900",
+    image:
+      "https://www.toyota.com.au/-/media/images/vehicles/coaster/coaster-bus/coaster-lx-white.png",
+    features: ["2.8L Turbo Diesel", "22 Seats", "Automatic Sliding Door"],
+    description:
+      "High-end Coaster designed for comfort and long-distance travel.",
+    specs: {
+      chassis: "Toyota Coaster",
+      engine: "2.8L 4-Cylinder Turbo Diesel",
+      transmission: "6-Speed Automatic",
+      seating: "22 Adults",
+      suspension: "Air Suspension Rear",
+      airConditioning: "High-Capacity Roof-Mounted A/C",
+    },
+  },
+  {
     id: 6,
     name: "2024 Toyota Coaster LX",
     price: "$32,500",
     image:
       "https://i.pinimg.com/1200x/0c/c3/2c/0cc32c4e3916e8ac4c5d439f623a5461.jpg",
+    images: [
+      "https://i.pinimg.com/1200x/0c/c3/2c/0cc32c4e3916e8ac4c5d439f623a5461.jpg",
+      "https://i.pinimg.com/736x/42/36/53/4236530b8774c8ae3211ce9fab2c1449.jpg",
+    ],
     features: ["2.8L Turbo Diesel", "18 Seats", "Air Suspension"],
     description:
       "Reliable mid-size bus perfect for city and intercity routes, featuring comfortable seating and smooth ride quality.",
@@ -1415,28 +1437,52 @@ function openModal(id, type) {
 
   if (!item) return;
 
+  const modal = document.querySelector(".modal");
   document.querySelector(".modal-title").textContent = item.name;
   document.querySelector(".modal-price").textContent = item.price;
   document.querySelector(".modal-description").textContent = item.description;
-  document.querySelector(
-    ".modal-image"
-  ).style.backgroundImage = `url('${item.image}')`;
 
-  // Update specs
-  const specsGrid = document.querySelector(".specs-grid");
+  // ✅ Replace modal-image with carousel-track
+  const track = modal.querySelector(".carousel-track");
+  const hasImages = item.images && item.images.length > 0;
+  track.innerHTML = hasImages
+    ? item.images.map((url) => `<img src="${url}" alt="Image">`).join("")
+    : `<img src="${item.image}" alt="Default Image">`;
+
+  // ✅ Specs
+  const specsGrid = modal.querySelector(".specs-grid");
   specsGrid.innerHTML = "";
-
   for (const [key, value] of Object.entries(item.specs)) {
     const spec = document.createElement("div");
     spec.className = "spec";
     spec.innerHTML = `
-                          <div class="spec-title">${key.toUpperCase()}</div>
-                          <div class="spec-value">${value}</div>
-                      `;
+      <div class="spec-title">${key.toUpperCase()}</div>
+      <div class="spec-value">${value}</div>
+    `;
     specsGrid.appendChild(spec);
   }
 
-  // Show modal
+  // ✅ Carousel logic
+  let currentIndex = 0;
+  const totalImages = hasImages ? item.images.length : 1;
+
+  const updateCarousel = () => {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  };
+
+  modal.querySelector(".carousel-btn.prev").onclick = () => {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    updateCarousel();
+  };
+
+  modal.querySelector(".carousel-btn.next").onclick = () => {
+    currentIndex = (currentIndex + 1) % totalImages;
+    updateCarousel();
+  };
+
+  updateCarousel();
+
+  // ✅ Show modal
   document.querySelector(".modal-overlay").classList.add("active");
   document.body.style.overflow = "hidden";
 }
