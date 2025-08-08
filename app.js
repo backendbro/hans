@@ -5,24 +5,6 @@ document.getElementById("load-more").addEventListener("click", () => {
 });
 const vehicles = [
   {
-    id: 17,
-    name: "2024 Toyota Coaster LX",
-    price: "$36,900",
-    image:
-      "https://www.toyota.com.au/-/media/images/vehicles/coaster/coaster-bus/coaster-lx-white.png",
-    features: ["2.8L Turbo Diesel", "22 Seats", "Automatic Sliding Door"],
-    description:
-      "High-end Coaster designed for comfort and long-distance travel.",
-    specs: {
-      chassis: "Toyota Coaster",
-      engine: "2.8L 4-Cylinder Turbo Diesel",
-      transmission: "6-Speed Automatic",
-      seating: "22 Adults",
-      suspension: "Air Suspension Rear",
-      airConditioning: "High-Capacity Roof-Mounted A/C",
-    },
-  },
-  {
     id: 6,
     name: "2024 Toyota Coaster LX",
     price: "$32,500",
@@ -229,7 +211,13 @@ const vehicles = [
     name: "2024 Winnebago ROAM",
     price: "$50,995",
     image:
-      "https://i.pinimg.com/1200x/a2/3a/0a/a23a0abfb2f3c9650207ff3f97b4a200.jpg",
+      "https://cdn-media.tilabs.io/v1/media/685b7e6ba3b71b289e56e72b.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/685b7e6c49f2620a17101175.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685b7e6e71e60925d3097403.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685b7e6f2e46654f786a0043.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685b7e70d9d9d54f1b2d13d4.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: ["Accessible RV", "Flex Bed System", "3.6kWh Lithium Battery"],
     description:
       "The Winnebago ROAM combines accessibility, comfort, and freedom in a compact Class B RV built on the Ram ProMaster chassis. Ideal for city exploring or cross-country travel.",
@@ -248,6 +236,14 @@ const vehicles = [
     price: "$150,400",
     image:
       "https://cdn-media.tilabs.io/v1/media/6723dbde288d7c4b3c37d393.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/6723dbdd90fe695a6516eff5.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6723dbdf0003a047ba5293b8.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6723dbe1adb62a75081d5ba4.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6723dbe993da40375848de93.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6723dbf0e836b773c44452f9.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6723dbf4d0d6801b6711bb64.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: [
       "Luxury Interior",
       "Full-Sized Bathroom",
@@ -273,6 +269,13 @@ const vehicles = [
     price: "$159,000",
     image:
       "https://cdn-media.tilabs.io/v1/media/67d05f8ed94b74730177f5ff.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/67d05fa24fd56931594e2fe3.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67d05fa3d63e0c353e76c7de.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67d05fa3aa765a23e049fee2.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67d05fab8c76ea50465f9178.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67d05fadd2d6624f275dbdf5.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: [
       "Mercedes-Benz Diesel",
       "Extended Interior Space",
@@ -298,6 +301,14 @@ const vehicles = [
     price: "$89,000",
     image:
       "https://cdn-media.tilabs.io/v1/media/6871370eec29860fcc4f99ff.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/6887a09200889241674536da.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6871370f5d071b405f69d2d5.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6871370f23dfd67c1f50dc59.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6871370f820301132f7ef983.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6871370f03c9734ebc08a336.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/6871370fc69ae1495a26d1cc.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: [
       "Up to 9 Passengers",
       "Mercedes-Benz Sprinter",
@@ -323,6 +334,15 @@ const vehicles = [
     price: "$169,950",
     image:
       "https://cdn-media.tilabs.io/v1/media/687137320435447ce06d2de3.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/68845cc2086e281a696e9866.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/68845cc5086e281a696e9872.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/68845cc5086e281a696e9873.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/68845cc5086e281a696e9875.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/68845cc6086e281a696e9879.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/68845cc8086e281a696e9880.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/68845cca086e281a696e9887.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: [
       "All-Wheel Drive",
       "Mercedes-Benz Turbo Diesel",
@@ -349,6 +369,14 @@ const vehicles = [
     price: "$174,500",
     image:
       "https://cdn-media.tilabs.io/v1/media/6883c74d5022c8703f29c4be.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/67fd46a92e70a507161705a1.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67fd46ac153163490b6c1912.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67fd46acc9778d0ac3755b66.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67fd46b1fc9b517c7f5d9046.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67fd46aaa9e66032313a5346.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/67fd46ab4a3fef4b211f4bb5.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: [
       "All-Terrain AWD",
       "Lithionics Lithium System",
@@ -375,6 +403,14 @@ const vehicles = [
     price: "$94,990",
     image:
       "https://cdn-media.tilabs.io/v1/media/685e2a2b0aa5a500167ea636.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/685e2a32270f4868f630063b.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685e2a3741e7576e3d700d51.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685e2a3897ab2a068563a8b8.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685e2a39052c9c7362383425.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685e2a3a7b775f283c5443ce.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/685e2a3b7e654c372804f8f5.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: ["All-Wheel Drive", "Murphy Bed", "Diesel Powered"],
     description:
       "Compact and versatile, the 2021 Gemini 23TW from Thor Motor Coach offers AWD capability, modern interior design, and smart use of space. Perfect for couples or solo travelers.",
@@ -397,6 +433,16 @@ const vehicles = [
     price: "$109,990",
     image:
       "https://cdn-media.tilabs.io/v1/media/672e3f5607785245da0d35d4.jpg?width=1024&height=768&quality=70&upsize=true",
+    images: [
+      "https://cdn-media.tilabs.io/v1/media/672e3f6d4a00f316aa0f8f83.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/672e3fed63e348523b768e14.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/672e4008a41e8679473af705.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/672e40417b6798477e732836.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/672e405d1b6d3117e552c7b4.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/672e4079f517633708688dbb.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/672e40c9e32d782b0052d573.jpg?width=1024&height=768&quality=70&upsize=true",
+      "https://cdn-media.tilabs.io/v1/media/672e40e32dbde016c659e8a6.jpg?width=1024&height=768&quality=70&upsize=true",
+    ],
     features: ["Lithium Power System", "AWD Sprinter", "Adventure Ready"],
     description:
       "The 2021 Stealth Mode by Storyteller Overland is a rugged, off-grid adventure van built on a Mercedes-Benz AWD Sprinter chassis, equipped with a Volta lithium power system and flexible interior living space.",
@@ -420,6 +466,12 @@ const vehicles = [
     price: "$32,500",
     image:
       "https://www.dubicars.com/images/28e34b/w_1300x760/al-kuwait-used-cars-exhibition-llc/feaada3c-6cd0-4dc5-95ff-909b1783f1e4.jpeg",
+    images: [
+      "https://www.dubicars.com/images/8c08bc/w_1300x760/al-kuwait-used-cars-exhibition-llc/9233dac6-e58c-4564-a7c3-083673d41b3f.jpeg",
+      "https://www.dubicars.com/images/66f364/w_1300x760/al-kuwait-used-cars-exhibition-llc/6848ab43-645c-42ab-a5f1-27f8992f76e4.jpeg",
+      "https://www.dubicars.com/images/bd5c41/w_1300x760/al-kuwait-used-cars-exhibition-llc/ce23d3d9-3270-48e0-90e0-122d81ce7698.jpeg",
+      "https://www.dubicars.com/images/dbe8d2/w_1300x760/al-kuwait-used-cars-exhibition-llc/501a07d2-ac48-4a97-9231-c536dd4e4bb8.jpeg",
+    ],
     features: ["4.0L V6 Engine", "4WD Off-Road", "High Ground Clearance"],
     description:
       "The Toyota Hilux Adventure 4.0L is a rugged off-road pickup truck with a powerful V6 engine, advanced 4WD system, and enhanced ground clearance for extreme terrain.",
@@ -443,6 +495,12 @@ const vehicles = [
     price: "$28,500",
     image:
       "https://www.dubicars.com/images/571546/w_1300x760/autocars/25234a80-08ef-4563-99a7-8e82fe97c904.jpeg",
+    images: [
+      "https://www.dubicars.com/images/9aa023/w_1300x760/autocars/7c4b9a7f-7511-4377-9f53-944a1adbff5a.jpeg",
+      "https://www.dubicars.com/images/943052/w_1300x760/autocars/25cd0462-446f-4fb1-a611-3faa010c7cb4.jpeg",
+      "https://www.dubicars.com/images/26f119/w_1300x760/autocars/1e20f6d2-267e-48ba-9979-b5a02612743d.jpeg",
+      "https://www.dubicars.com/images/42b0f4/w_1300x760/autocars/ffd1da81-c587-453e-b220-03a4f02be6f7.jpeg",
+    ],
     features: ["4WD Capability", "Turbo Diesel Engine", "Off-Road Suspension"],
     description:
       "Toyota Hilux 4x4 is a legendary workhorse known for its toughness, off-road strength, and reliable turbo diesel engine—perfect for adventure or utility.",
@@ -466,6 +524,14 @@ const vehicles = [
     price: "$36,700",
     image:
       "https://www.dubicars.com/images/dd1c72/w_1300x760/unique-cars-fze/a44306ff-2635-4a63-8d88-0c60c6296bae.jpeg",
+    images: [
+      "https://www.dubicars.com/images/3d821a/w_1300x760/unique-cars-fze/b97b3290-be74-47ca-b3ba-02ad3b6939be.jpeg",
+      "https://www.dubicars.com/images/935d8e/w_1300x760/unique-cars-fze/fbd55bef-593c-434d-bed5-da9be5a0f4b4.jpeg",
+      "https://www.dubicars.com/images/c8a66e/w_1300x760/unique-cars-fze/7c55b569-2585-4845-9b49-a228771b192e.jpeg",
+      "https://www.dubicars.com/images/316008/w_1300x760/unique-cars-fze/f69fe787-fd86-415d-9a53-b3e0bd58e45f.jpeg",
+      "https://www.dubicars.com/images/46f94b/w_1300x760/unique-cars-fze/ea5a6f83-f082-4c8f-82fa-f794a2916387.jpeg",
+      "https://www.dubicars.com/images/7affa3/w_1300x760/unique-cars-fze/11dd79d8-7aeb-4ba1-8ec6-f4c5a1477b93.jpeg",
+    ],
     features: ["GR Sport Styling", "4.0L V6 Engine", "Off-Road Suspension"],
     description:
       "The 2024 Toyota Hilux GR SPORT V6 4.0L combines motorsport-inspired design with exceptional power, advanced 4WD capability, and rugged off-road enhancements.",
