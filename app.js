@@ -3,31 +3,8 @@ document.getElementById("load-more").addEventListener("click", () => {
   currentPage++;
   renderVehicles();
 });
-const vehicles = [
-  {
-    id: 6,
-    name: "2024 Toyota Coaster LX",
-    price: "$32,500",
-    image:
-      "https://i.pinimg.com/1200x/0c/c3/2c/0cc32c4e3916e8ac4c5d439f623a5461.jpg",
-    images: [
-      "https://www.saharamotorsuae.com/uploads/car-slider/2504041205224.webp",
-      "https://www.saharamotorsuae.com/uploads/car-slider/25040412072614.webp",
-      "https://www.saharamotorsuae.com/uploads/car-slider/25040412080021.webp",
-      "https://www.saharamotorsuae.com/uploads/car-slider/25040412082222.webp",
-    ],
-    features: ["2.8L Turbo Diesel", "18 Seats", "Air Suspension"],
-    description:
-      "Reliable mid-size bus perfect for city and intercity routes, featuring comfortable seating and smooth ride quality.",
-    specs: {
-      chassis: "Toyota Coaster",
-      engine: "2.8L 4-Cylinder Turbo Diesel",
-      transmission: "6-Speed Automatic",
-      seating: "18 Adults",
-      suspension: "Front: Coil / Rear: Air",
-      airConditioning: "Roof-Mounted Package",
-    },
-  },
+
+const numberedVehicles = [
   {
     id: 7,
     name: "2024 Toyota Hiace Commuter GL",
@@ -813,6 +790,11 @@ const vehicles = [
   },
 ];
 
+const vehicles = numberedVehicles.map((vehicle, index) => ({
+  ...vehicle,
+  id: index + 1,
+}));
+
 // Solar panel data
 const solarPanels = [
   {
@@ -1539,7 +1521,15 @@ document.getElementById("load-more-solar").addEventListener("click", () => {
   currentSolarPage++;
   renderSolarPanels();
 });
-// Open modal
+
+// Assumes there is a single modal-overlay and single .modal in the DOM
+const modalOverlay = document.querySelector(".modal-overlay");
+const modal = modalOverlay.querySelector(".modal");
+const closeModalBtn = modal.querySelector(".close-modal");
+
+// store references to listeners so we can clean up
+let activeListeners = [];
+
 function openModal(id, type) {
   let item;
   if (type === "vehicle") {
@@ -1547,25 +1537,25 @@ function openModal(id, type) {
   } else {
     item = solarPanels.find((s) => s.id == id);
   }
-
   if (!item) return;
 
-  const modal = document.querySelector(".modal");
-  document.querySelector(".modal-title").textContent = item.name;
-  document.querySelector(".modal-price").textContent = item.price;
-  document.querySelector(".modal-description").textContent = item.description;
+  // Fill basic fields
+  modal.querySelector(".modal-title").textContent = item.name || "";
+  modal.querySelector(".modal-price").textContent = item.price || "";
+  modal.querySelector(".modal-description").textContent =
+    item.description || "";
 
-  // ✅ Replace modal-image with carousel-track
+  // Carousel track
   const track = modal.querySelector(".carousel-track");
   const hasImages = item.images && item.images.length > 0;
   track.innerHTML = hasImages
     ? item.images.map((url) => `<img src="${url}" alt="Image">`).join("")
     : `<img src="${item.image}" alt="Default Image">`;
 
-  // ✅ Specs
+  // Specs grid (clear + re-render)
   const specsGrid = modal.querySelector(".specs-grid");
   specsGrid.innerHTML = "";
-  for (const [key, value] of Object.entries(item.specs)) {
+  for (const [key, value] of Object.entries(item.specs || {})) {
     const spec = document.createElement("div");
     spec.className = "spec";
     spec.innerHTML = `
@@ -1575,46 +1565,143 @@ function openModal(id, type) {
     specsGrid.appendChild(spec);
   }
 
-  // ✅ Carousel logic
+  // --- Carousel logic ---
   let currentIndex = 0;
   const totalImages = hasImages ? item.images.length : 1;
 
-  const updateCarousel = () => {
+  // ensure track starts at 0
+  const updateCarousel = (animate = true) => {
+    if (!animate) track.style.transition = "none";
+    else track.style.transition = "transform 0.35s ease";
+    // Use calc so touch move can temporarily set transform in px if needed
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
   };
 
-  modal.querySelector(".carousel-btn.prev").onclick = () => {
+  // Buttons - ensure they exist (they are in your HTML)
+  const prevBtn = modal.querySelector(".carousel-btn.prev");
+  const nextBtn = modal.querySelector(".carousel-btn.next");
+
+  // click handlers (replace previous handlers to avoid duplicates)
+  const onPrev = () => {
     currentIndex = (currentIndex - 1 + totalImages) % totalImages;
     updateCarousel();
   };
-
-  modal.querySelector(".carousel-btn.next").onclick = () => {
+  const onNext = () => {
     currentIndex = (currentIndex + 1) % totalImages;
     updateCarousel();
   };
 
-  updateCarousel();
+  // Attach and remember listeners for cleanup
+  prevBtn.onclick = onPrev;
+  nextBtn.onclick = onNext;
+  activeListeners.push(() => {
+    prevBtn.onclick = null;
+    nextBtn.onclick = null;
+  });
 
-  // ✅ Show modal
-  document.querySelector(".modal-overlay").classList.add("active");
+  updateCarousel(false);
+
+  // --- Touch / swipe support for mobile ---
+  let touchStartX = 0;
+  let touchDeltaX = 0;
+  const threshold = 50; // px to consider a swipe
+
+  const onTouchStart = (e) => {
+    if (!e.touches || e.touches.length === 0) return;
+    touchStartX = e.touches[0].clientX;
+    touchDeltaX = 0;
+    track.style.transition = "none"; // disable transition while dragging
+  };
+
+  const onTouchMove = (e) => {
+    if (!e.touches || e.touches.length === 0) return;
+    touchDeltaX = e.touches[0].clientX - touchStartX;
+    // allow a little resistance by converting px to calc expression
+    track.style.transform = `translateX(calc(-${
+      currentIndex * 100
+    }% + ${touchDeltaX}px))`;
+  };
+
+  const onTouchEnd = () => {
+    // Determine if swipe exceeded threshold
+    if (Math.abs(touchDeltaX) > threshold) {
+      if (touchDeltaX < 0) {
+        // swipe left -> next
+        currentIndex = (currentIndex + 1) % totalImages;
+      } else {
+        // swipe right -> prev
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+      }
+    }
+    // reset transform with animation
+    updateCarousel(true);
+    touchStartX = 0;
+    touchDeltaX = 0;
+  };
+
+  track.addEventListener("touchstart", onTouchStart, { passive: true });
+  track.addEventListener("touchmove", onTouchMove, { passive: true });
+  track.addEventListener("touchend", onTouchEnd);
+  activeListeners.push(() => {
+    track.removeEventListener("touchstart", onTouchStart);
+    track.removeEventListener("touchmove", onTouchMove);
+    track.removeEventListener("touchend", onTouchEnd);
+  });
+
+  // Optional: keyboard support (left/right arrows) for accessibility
+  const onKeyDown = (e) => {
+    if (e.key === "ArrowLeft") onPrev();
+    if (e.key === "ArrowRight") onNext();
+    if (e.key === "Escape") closeModal(); // close on Esc
+  };
+  document.addEventListener("keydown", onKeyDown);
+  activeListeners.push(() =>
+    document.removeEventListener("keydown", onKeyDown)
+  );
+
+  // Show modal
+  modalOverlay.classList.add("active");
   document.body.style.overflow = "hidden";
+
+  // store a cleanup function on the modal element so close handlers can call it
+  modal._cleanup = () => {
+    // call and clear stored cleanup functions
+    while (activeListeners.length) {
+      const fn = activeListeners.pop();
+      try {
+        fn();
+      } catch (err) {
+        /* ignore */
+      }
+    }
+    // reset track transform
+    track.style.transform = "";
+    track.style.transition = "";
+    // remove any leftover onclicks as extra safety
+    if (prevBtn) prevBtn.onclick = null;
+    if (nextBtn) nextBtn.onclick = null;
+    // clear _cleanup itself
+    delete modal._cleanup;
+  };
 }
 
-// Close modal
-document.querySelector(".close-modal").addEventListener("click", function () {
-  document.querySelector(".modal-overlay").classList.remove("active");
+// Re-usable close function to ensure cleanup
+function closeModal() {
+  modalOverlay.classList.remove("active");
   document.body.style.overflow = "auto";
-});
+  // if any cleanup registered, call it
+  if (modal._cleanup) modal._cleanup();
+}
 
-// Close modal when clicking outside
-document
-  .querySelector(".modal-overlay")
-  .addEventListener("click", function (e) {
-    if (e.target === this) {
-      this.classList.remove("active");
-      document.body.style.overflow = "auto";
-    }
-  });
+// hook up close button
+closeModalBtn.addEventListener("click", closeModal);
+
+// Close modal when clicking outside (on overlay)
+modalOverlay.addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
 
 // Initialize the page
 document.addEventListener("DOMContentLoaded", function () {
