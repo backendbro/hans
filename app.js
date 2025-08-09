@@ -11,8 +11,10 @@ const vehicles = [
     image:
       "https://i.pinimg.com/1200x/0c/c3/2c/0cc32c4e3916e8ac4c5d439f623a5461.jpg",
     images: [
-      "https://i.pinimg.com/1200x/0c/c3/2c/0cc32c4e3916e8ac4c5d439f623a5461.jpg",
-      "https://i.pinimg.com/736x/42/36/53/4236530b8774c8ae3211ce9fab2c1449.jpg",
+      "https://www.saharamotorsuae.com/uploads/car-slider/2504041205224.webp",
+      "https://www.saharamotorsuae.com/uploads/car-slider/25040412072614.webp",
+      "https://www.saharamotorsuae.com/uploads/car-slider/25040412080021.webp",
+      "https://www.saharamotorsuae.com/uploads/car-slider/25040412082222.webp",
     ],
     features: ["2.8L Turbo Diesel", "18 Seats", "Air Suspension"],
     description:
@@ -31,7 +33,14 @@ const vehicles = [
     name: "2024 Toyota Hiace Commuter GL",
     price: "$25,200",
     image:
-      "https://i.pinimg.com/1200x/85/7c/e0/857ce098c12068221e3e09dc5e14e3ff.jpg",
+      "https://www.dubicars.com/images/59a4eb/w_1300x760/carzilla-motors/29fcc3e6-cd96-4b7c-bcea-08988795a5f0.jpg",
+    images: [
+      "https://www.dubicars.com/images/6e040b/w_1300x760/carzilla-motors/f73818e9-0966-46c8-8b8a-2327e06e2584.jpg",
+      "https://www.dubicars.com/images/f36b91/w_1300x760/carzilla-motors/918afaa5-27ad-43ac-b1a6-23a402b58ef6.jpg",
+      "https://www.dubicars.com/images/6d3707/w_1300x760/carzilla-motors/1683741b-010e-4c59-a597-bfae58f9a867.jpg",
+      "https://www.dubicars.com/images/9bdd59/w_1300x760/carzilla-motors/f697c055-a721-4e8f-974d-f38ce19b42c4.jpg",
+      "https://www.dubicars.com/images/c65a9f/w_1300x760/carzilla-motors/f4e4d65f-8984-4823-b865-50cea34895a8.jpg",
+    ],
     features: ["3.0L Turbo Diesel", "15 Seats", "High Roof"],
     description:
       "Spacious and versatile commuter van, optimized for passenger comfort with generous headroom and durable interiors.",
@@ -50,6 +59,11 @@ const vehicles = [
     price: "$38,900",
     image:
       "https://image-cdn.beforward.jp/large/202201/2735324/BK238019_f79116.JPG",
+    images: [
+      "https://www.dubicars.com/images/f8a826/r_960x540/generations/generation_64a6461cdd334_nissan-civilian-interior-cockpit.jpg?6",
+      "https://www.dubicars.com/images/083108/r_960x540/generations/generation_64a6461d053a8_nissan-civilian-interior-seats.jpg?6",
+      "https://www.dubicars.com/images/9ff62f/r_960x540/generations/generation_64a6461c8e48d_nissan-civilian-exterior-front.jpg?6",
+    ],
     features: ["140 hp Diesel", "21 Seats", "Electric Sliding Door"],
     description:
       "Compact city bus built on Nissan’s proven chassis, featuring easy boarding and efficient fuel economy.",
@@ -67,7 +81,13 @@ const vehicles = [
     name: "2024 Mercedes-Benz Sprinter Passenger 516 CDI",
     price: "$32,300",
     image:
-      "https://img.linemedia.com/img/s/passenger-van-Mercedes-Benz-Sprinter-516-CDI-School-bus-23-seats-automatic---1729857344117559128_common--24102514503057305700.jpg",
+      "https://dbz-images.dubizzle.com/images/2025/08/07/b701a31bcfbb4f45b16e25e826046167-.jpeg?impolicy=dpv",
+    images: [
+      "https://dbz-images.dubizzle.com/images/2025/08/07/894dd4723c9042acb579f99c27625dbb-.jpeg?impolicy=dpv",
+      "https://dbz-images.dubizzle.com/images/2025/08/07/91a82219d16d440e8f61026691357a31-.jpeg?impolicy=dpv",
+      "https://dbz-images.dubizzle.com/images/2025/08/07/1a1ae5c6debf4c4d86aa91c8fe0cfe06-.jpeg?impolicy=dpv",
+      "https://dbz-images.dubizzle.com/images/2025/08/07/bb5c0a908cf1414f9f03bbe52232b92c-.jpeg?impolicy=dpv",
+    ],
     features: ["519 hp Turbo Diesel", "19 Seats", "Adaptive ESP"],
     description:
       "Premium passenger van with advanced safety systems and flexible seating, ideal for executive transport.",
@@ -80,30 +100,18 @@ const vehicles = [
       interior: "Leather-Finish Seats",
     },
   },
-  {
-    id: 10,
-    name: "2024 Toyota Coaster Super Custom",
-    price: "$28,750",
-    image:
-      "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification34-798x466.jpg",
-    features: ["2.8L Diesel", "23 Seats", "Luxury Interior"],
-    description:
-      "High-spec Coaster with premium upholstery, LED lighting, and USB charging ports at every seat.",
-    specs: {
-      chassis: "Coaster Super Custom",
-      engine: "2.8L 4-Cylinder Turbo Diesel",
-      transmission: "6-Speed Automatic",
-      seating: "23 Adults",
-      interior: "Leatherette, LED Lighting",
-      tech: "Individual USB Ports",
-    },
-  },
+
   {
     id: 11,
     name: "2024 Mitsubishi Rosa Deluxe",
     price: "$25,800",
     image:
       "https://steerwellauto.com/wp-content/uploads/2024/09/1-4-1024x720.jpg",
+    images: [
+      "https://www.dubicars.com/images/997d76/w_1300x760/target-motors-2/b7ef6bce-c057-4ba9-afe4-04e9df5ca3ee.jpg",
+      "https://www.dubicars.com/images/1fe234/w_1300x760/target-motors-2/5cd89dca-45f9-446c-80d9-362480cc15ff.jpg",
+      "https://www.dubicars.com/images/5ac2d6/w_1300x760/target-motors-2/721f8d77-045e-4e93-99bc-15f6b7c79f9b.jpg",
+    ],
     features: ["2.9L Diesel", "25 Seats", "Rear Luggage Compartment"],
     description:
       "Spacious 25-seat bus with generous luggage space and robust build for long-distance travel.",
@@ -122,6 +130,12 @@ const vehicles = [
     price: "$39,900",
     image:
       "https://bluesky-cogcms.cdn.imgeng.in/media/2kpnlgot/daily-minibus.jpg",
+    images: [
+      "https://www.dealermanager.co.uk/images/202407/large/DM13344-cjuhczgb.jpg",
+      "https://www.dealermanager.co.uk/images/202407/large/DM13344-ykarejiz.jpg",
+      "https://www.dealermanager.co.uk/images/202407/large/DM13344-mdhfhkxb.jpg",
+      "https://www.dealermanager.co.uk/images/202407/large/DM13344-egchlnph.jpg",
+    ],
     features: ["170 hp Diesel", "16 Seats", "Low-Floor Access"],
     description:
       "Versatile minibus with low-floor design for easy boarding, ideal for shuttle and airport services.",
@@ -139,7 +153,16 @@ const vehicles = [
     name: "2024 Toyota Hiace Grand Cabin",
     price: "$18,300",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLCDl92NKnmYhv6NjL1IEsdzfXetvKZu0hkA&s",
+      "https://picture1.goo-net.com/7000610017/30250307/J/70006100173025030700100.jpg",
+    images: [
+      "https://picture1.goo-net.com/061/0610017/J/0610017A30250307W00117.jpg",
+      "https://picture1.goo-net.com/061/0610017/J/0610017A30250307W00122.jpg",
+      "https://picture1.goo-net.com/061/0610017/J/0610017A30250307W00123.jpg",
+      "https://picture1.goo-net.com/061/0610017/J/0610017A30250307W00133.jpg",
+      "https://picture1.goo-net.com/061/0610017/J/0610017A30250307W00146.jpg",
+      "https://picture1.goo-net.com/061/0610017/J/0610017A30250307W00148.jpg",
+      "https://picture1.goo-net.com/061/0610017/J/0610017A30250307W00154.jpg",
+    ],
     features: ["2.8L Turbo Diesel", "13 Seats", "Executive Layout"],
     description:
       "Executive-style Hiace with captain chairs, woodgrain trim, and tinted privacy glass.",
@@ -157,6 +180,14 @@ const vehicles = [
     name: "2024 Toyota Coaster Eco Express",
     price: "$20,200",
     image: "https://casauto.com/wp-content/uploads/2024/09/IMG_3597.jpg",
+    images: [
+      "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification9-798x466.png",
+      "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification28-798x466.png",
+      "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification14-798x466.png",
+      "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification12-798x466.png",
+      "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification11-798x466.png",
+      "https://gsat.jp/wp-content/uploads/2024/08/2024-Toyota-coaster-Long-GX-25-seater-Cold-weather-specification10-798x466.png",
+    ],
     features: ["2.8L Diesel", "20 Seats", "Fuel-Efficient Tuning"],
     description:
       "Eco-tuned Coaster with enhanced fuel management systems and lightweight body panels.",
@@ -175,6 +206,15 @@ const vehicles = [
     price: "$26,800",
     image:
       "https://gsat.jp/wp-content/uploads/2023/04/2023-Toyota-hiace-commuter-Super-long-GL-New-9.jpg",
+    images: [
+      "https://picture1.goo-net.com/090/0900002/J/0900002A30250220W00203.jpg",
+      "https://picture1.goo-net.com/090/0900002/J/0900002A30250220W00204.jpg",
+      "https://picture1.goo-net.com/090/0900002/J/0900002A30250220W00206.jpg",
+      "https://picture1.goo-net.com/090/0900002/J/0900002A30250220W00214.jpg",
+      "https://picture1.goo-net.com/090/0900002/J/0900002A30250220W00218.jpg",
+      "https://picture1.goo-net.com/090/0900002/J/0900002A30250220W00229.jpg",
+      "https://picture1.goo-net.com/090/0900002/J/0900002A30250220W00230.jpg",
+    ],
     features: ["3.0L Diesel", "15 Seats", "Premium Suspension"],
     description:
       "Super-commuter with upgraded shocks, noise insulation, and USB charging at every row.",
@@ -600,7 +640,14 @@ const vehicles = [
     name: "Toyota Hilux DC 2.7L SR5 MT 4x4 2024 - LHD",
     price: "$19,500",
     image:
-      "https://www.dubicars.com/images/7da1eb/w_1300x760/target-motors-3/7e8a7ec9-1a5c-449b-bd55-d4eaa75ba02b.jpg",
+      "https://www.dubicars.com/images/6b01e1/w_1300x760/target-motors-3/3da82559-1da8-47de-8f43-82cfa1febba2.jpg",
+    images: [
+      "https://www.dubicars.com/images/3ad778/w_1300x760/target-motors-3/fb437e38-fc6f-45dc-90d1-9c579bc43080.jpg",
+      "https://www.dubicars.com/images/4fad48/w_1300x760/target-motors-3/48489f3c-fb1b-4119-baf5-33963e4e9dbf.jpg",
+      "https://www.dubicars.com/images/9ded70/w_1300x760/target-motors-3/5c4b0ddd-0980-4ef5-8817-112f2ef8c789.jpg",
+      "https://www.dubicars.com/images/6bbad6/w_1300x760/target-motors-3/664721f9-48f9-491f-8950-4789b5b344fd.jpg",
+      "https://www.dubicars.com/images/f31eb3/w_1300x760/target-motors-3/a1fb8782-2481-4ff0-9395-bfa65bc86327.jpg",
+    ],
     features: ["2.7L Petrol Engine", "Manual Transmission", "4x4 Capability"],
     description:
       "A rugged and reliable double-cabin pickup with a 2.7L petrol engine, 4x4 drivetrain, and manual transmission. Ideal for both work and adventure in tough terrain.",
