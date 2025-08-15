@@ -1,3 +1,8 @@
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const carouselTrack = document.querySelector(".carousel-track");
+const carouselIndicators = document.querySelector(".carousel-indicators");
+
 // Vehicle data
 document.getElementById("load-more").addEventListener("click", () => {
   currentPage++;
@@ -8,7 +13,7 @@ const numberedVehicles = [
   {
     id: 7,
     name: "2024 Toyota Hiace Commuter GL",
-    price: "$25,200",
+    price: "$10,000",
     image: "https://casauto.com/wp-content/uploads/2024/08/IMG_3577.jpg",
     images: [
       "https://casauto.com/wp-content/uploads/2024/08/IMG_3577.jpg",
@@ -38,7 +43,7 @@ const numberedVehicles = [
   {
     id: 10,
     name: "Toyota Hilux Adventure 4.0L",
-    price: "$32,500",
+    price: "$12,500",
     image:
       "https://www.dubicars.com/images/28e34b/w_1300x760/al-kuwait-used-cars-exhibition-llc/feaada3c-6cd0-4dc5-95ff-909b1783f1e4.jpeg",
     images: [
@@ -75,7 +80,7 @@ const numberedVehicles = [
   {
     id: 11,
     name: "2024 Mitsubishi Rosa Deluxe",
-    price: "$25,800",
+    price: "$15,800",
     image:
       "https://www.dubicars.com/images/edf931/w_1300x760/steerwell-auto/5b33ca55-5b65-4595-82c1-9e1e6627d671.jpg",
     images: [
@@ -107,7 +112,7 @@ const numberedVehicles = [
   {
     id: 12,
     name: "Toyota Hilux 2024 GR SPORT V6 4.0L",
-    price: "$36,700",
+    price: "$9,700",
     image:
       "https://www.dubicars.com/images/dd1c72/w_1300x760/unique-cars-fze/a44306ff-2635-4a63-8d88-0c60c6296bae.jpeg",
     images: [
@@ -148,7 +153,7 @@ const numberedVehicles = [
   {
     id: 15,
     name: "Toyota Hilux DC 2.7L SR5 MT 4x4 2024 - LHD",
-    price: "$19,500",
+    price: "$8,000",
     image:
       "https://www.dubicars.com/images/6b01e1/w_1300x760/target-motors-3/3da82559-1da8-47de-8f43-82cfa1febba2.jpg",
     images: [
@@ -188,7 +193,7 @@ const numberedVehicles = [
   {
     id: 14,
     name: "Toyota Hiace VIP Luxury Seat Commuter 3.5L A/T",
-    price: "$50,000",
+    price: "$14,000",
     image:
       "https://www.dubicars.com/images/21b605/w_1300x760/eg-auto-fz-llc/0404a2e4-05bb-48bf-ad80-7c837579c436.jpg",
     images: [
@@ -220,7 +225,7 @@ const numberedVehicles = [
   {
     id: 16,
     name: "Toyota Coaster 2.7L",
-    price: "$40,000",
+    price: "$11,000",
     image:
       "https://www.dubicars.com/images/8928ee/w_1300x760/sahara-motors-fze/61f97dfd-e42b-4b09-b248-c467fe64cef2.jpeg",
     images: [
@@ -259,7 +264,7 @@ const numberedVehicles = [
   {
     id: 17,
     name: "Toyota Land Cruiser Pick Up LC79 DC V8 Diesel 4.5L",
-    price: "$30,000",
+    price: "$15,000",
     image:
       "https://www.dubicars.com/images/6192f2/wf_1300x760/force-motors-fze/f57b2cc5-78f7-416d-a152-c2452e5b49fb.jpeg",
     images: [
@@ -293,7 +298,7 @@ const numberedVehicles = [
   {
     id: 15,
     name: "Toyota Hiace GLS STD Roof",
-    price: "$40,000",
+    price: "$8,500",
     image:
       "https://www.dubicars.com/images/289d81/w_1300x760/target-motors-fze/f89dff7a-3ce2-4a5d-bd8e-396846476516.jpg",
     images: [
@@ -323,7 +328,7 @@ const numberedVehicles = [
   {
     id: 18,
     name: "2025 Toyota Prado Adventure 2.8L Diesel 4WD 7-Seat Automatic",
-    price: "$50,000",
+    price: "$18,000",
     image:
       "https://www.dubicars.com/images/ea4d5d/w_1300x760/sahara-motors/dde978b8-e157-45ba-ab0c-8c1d41031b1b.jpeg",
     images: [
@@ -360,7 +365,7 @@ const numberedVehicles = [
   {
     id: 13,
     name: "2024 Toyota Hiace Grand Cabin",
-    price: "$18,300",
+    price: "$11,300",
     image:
       "https://picture1.goo-net.com/7000610017/30250307/J/70006100173025030700100.jpg",
     images: [
@@ -388,7 +393,7 @@ const numberedVehicles = [
   {
     id: 15,
     name: "2024 Toyota Hiace Super Commuter",
-    price: "$26,800",
+    price: "$12,000",
     image:
       "https://gsat.jp/wp-content/uploads/2023/04/2023-Toyota-hiace-commuter-Super-long-GL-New-9.jpg",
     images: [
@@ -415,7 +420,7 @@ const numberedVehicles = [
   {
     id: 1,
     name: "2025 Winnebago Revel 44N AWD",
-    price: "$69,995",
+    price: "$19,995",
     image:
       "https://cdn-media.tilabs.io/v1/media/67fd46a89521656751518ca5.jpg?width=1024&height=768&quality=70&upsize=true", // Replace with an actual image of the RV if available
     features: ["4.1 kWh Lithium", "215W Solar", "2.0L Turbo Diesel"],
@@ -434,7 +439,7 @@ const numberedVehicles = [
   {
     id: 2,
     name: "2024 Winnebago ROAM",
-    price: "$50,995",
+    price: "$20,995",
     image:
       "https://cdn-media.tilabs.io/v1/media/685b7e6ba3b71b289e56e72b.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -458,7 +463,7 @@ const numberedVehicles = [
   {
     id: 4,
     name: "2025 OGV Luxury Coach V-CRUISE 10OBA",
-    price: "$150,400",
+    price: "$16,400",
     image:
       "https://cdn-media.tilabs.io/v1/media/6723dbde288d7c4b3c37d393.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -491,7 +496,7 @@ const numberedVehicles = [
   {
     id: 4,
     name: "2018 Airstream Interstate Grand Tour EXT 3500",
-    price: "$159,000",
+    price: "$15,000",
     image:
       "https://cdn-media.tilabs.io/v1/media/67d05f8ed94b74730177f5ff.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -523,7 +528,7 @@ const numberedVehicles = [
   {
     id: 5,
     name: "2021 Airstream Interstate 24GL",
-    price: "$89,000",
+    price: "$12,000",
     image:
       "https://cdn-media.tilabs.io/v1/media/6871370eec29860fcc4f99ff.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -556,7 +561,7 @@ const numberedVehicles = [
   {
     id: 7,
     name: "2026 Thor Motor Coach TIBURON 24XL",
-    price: "$169,950",
+    price: "$19,950",
     image:
       "https://cdn-media.tilabs.io/v1/media/687137320435447ce06d2de3.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -591,7 +596,7 @@ const numberedVehicles = [
   {
     id: 7,
     name: "2026 Winnebago REVEL SPORT 44C - ATH EDITION",
-    price: "$174,500",
+    price: "$17,500",
     image:
       "https://cdn-media.tilabs.io/v1/media/6883c74d5022c8703f29c4be.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -625,7 +630,7 @@ const numberedVehicles = [
   {
     id: 8,
     name: "2021 Thor Motor Coach GEMINI 23TW",
-    price: "$94,990",
+    price: "$14,990",
     image:
       "https://cdn-media.tilabs.io/v1/media/685e2a2b0aa5a500167ea636.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -655,7 +660,7 @@ const numberedVehicles = [
   {
     id: 9,
     name: "2021 Storyteller Overland Stealth Mode",
-    price: "$109,990",
+    price: "$10,990",
     image:
       "https://cdn-media.tilabs.io/v1/media/672e3f5607785245da0d35d4.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -688,7 +693,7 @@ const numberedVehicles = [
   {
     id: 10,
     name: "Toyota Hilux Adventure 4.0L",
-    price: "$32,500",
+    price: "$12,500",
     image:
       "https://www.dubicars.com/images/28e34b/w_1300x760/al-kuwait-used-cars-exhibition-llc/feaada3c-6cd0-4dc5-95ff-909b1783f1e4.jpeg",
     images: [
@@ -717,7 +722,7 @@ const numberedVehicles = [
   {
     id: 11,
     name: "Toyota Hilux 4x4",
-    price: "$28,500",
+    price: "$8,500",
     image:
       "https://www.dubicars.com/images/571546/w_1300x760/autocars/25234a80-08ef-4563-99a7-8e82fe97c904.jpeg",
     images: [
@@ -747,7 +752,7 @@ const numberedVehicles = [
   {
     id: 13,
     name: "Toyota Hilux",
-    price: "$22,500",
+    price: "$7,000",
     image:
       "https://www.dubicars.com/images/6b01e1/w_1300x760/target-motors-3/3da82559-1da8-47de-8f43-82cfa1febba2.jpg",
     features: ["Reliable 4x4 Utility", "2.8L Turbo Diesel", "Durable Bed"],
@@ -770,7 +775,7 @@ const numberedVehicles = [
   {
     id: 14,
     name: "Toyota Hilux GR Sport 4.0L",
-    price: "$29,990",
+    price: "$9,990",
     image:
       "https://www.dubicars.com/images/330475/w_1300x760/aaa-motors-fze/faad2b50-85c0-4991-b790-e3a7f41ff190.jpeg",
     features: ["4.0L V6 Engine", "GR Sport Design", "Off-Road Suspension"],
@@ -794,7 +799,7 @@ const numberedVehicles = [
   {
     id: 16,
     name: "Nissan Patrol SE Platinum 2024 - LHD",
-    price: "$45,000",
+    price: "$15,000",
     image:
       "https://i.pinimg.com/736x/87/8b/97/878b97db8775f526decec69ddfdc0d94.jpg",
     features: ["5.6L V8 Engine", "Automatic Transmission", "Luxury Interior"],
@@ -817,7 +822,7 @@ const numberedVehicles = [
   {
     id: 17,
     name: "Mitsubishi L200 Sportero 2024 - LHD",
-    price: "$23,000",
+    price: "$13,000",
     image:
       "https://i.pinimg.com/736x/b7/75/54/b77554fb1bedb868d90c50a26f4583ea.jpg",
     features: [
@@ -844,7 +849,7 @@ const numberedVehicles = [
   {
     id: 18,
     name: "Ford Ranger XLT 2.0L Bi-Turbo 2024 - LHD",
-    price: "$27,800",
+    price: "$19,800",
     image:
       "https://i.pinimg.com/736x/5d/5c/87/5d5c87681931b5181d7ef9a3c83bf5e9.jpg",
     features: ["2.0L Bi-Turbo Diesel", "10-Speed Auto", "Off-Road Capable"],
@@ -867,7 +872,7 @@ const numberedVehicles = [
   {
     id: 19,
     name: "Land Cruiser 300 GX-R V6 2024 - LHD",
-    price: "$42,000",
+    price: "$19,000",
     image:
       "https://i.pinimg.com/736x/63/3a/f0/633af0806a1379734f6f5ef65904ba55.jpg",
     features: [
@@ -894,7 +899,7 @@ const numberedVehicles = [
   {
     id: 20,
     name: "Isuzu D-MAX 3.0L 4x4 2024 - LHD",
-    price: "$22,500",
+    price: "$11,500",
     image:
       "https://i.pinimg.com/736x/13/17/53/13175313961eb887f864415652ffdaef.jpg",
     features: ["3.0L Diesel Engine", "4x4 Manual", "Heavy-Duty Build"],
@@ -917,7 +922,7 @@ const numberedVehicles = [
   {
     id: 21,
     name: "Hyundai Santa Fe 2.5L 2024 - LHD",
-    price: "$31,900",
+    price: "$19,900",
     image:
       "https://i.pinimg.com/1200x/b7/65/99/b7659904fc1afcf9f95d3a72ced4ced9.jpg",
     features: ["2.5L Petrol Engine", "7-Seater SUV", "Comfort & Tech Focused"],
@@ -937,7 +942,7 @@ const numberedVehicles = [
       safety: "Blind Spot View, Rear Cross Alert, 6 Airbags",
     },
   },
-];
+]; // Your vehicle data array
 
 const vehicles = numberedVehicles.map((vehicle, index) => ({
   ...vehicle,
@@ -949,7 +954,7 @@ const solarPanels = [
   {
     id: 28,
     name: "7.3kW Solar Kit - Mission Solar 410 Black & Sol-Ark Hybrid Inverter",
-    price: "$5,499",
+    price: "$3,499",
     image:
       "https://cdn11.bigcommerce.com/s-3nrr5bfo5i/images/stencil/500x659/products/5921/22261/solar-panel-kit-mono-120-AllBlack-SolArk__07100.1750108757.jpg?c=2",
     features: [
@@ -970,7 +975,7 @@ const solarPanels = [
   {
     id: 24,
     name: "Pytes V5 Battery | EG4 Hybrid Inverter Energy Storage Bundle",
-    price: "$2,899",
+    price: "$2,299",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/attribute_rule_images/661_source_1750181819.png",
     features: [
@@ -1073,7 +1078,7 @@ const solarPanels = [
   {
     id: 21,
     name: "EG4 FlexBOSS18 13kW AC Hybrid Inverter",
-    price: "$3,599",
+    price: "$1,599",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/640w/products/7837/8913/FlexBOSS18_-_Front__70491.1739398622.jpg?c=1",
     features: [
@@ -1562,7 +1567,7 @@ const solarPanels = [
       warranty: "25 Years",
     },
   },
-];
+]; // Your solar panel data array
 
 const vehiclesContainer = document.getElementById("vehicles-container");
 const loadMoreBtn = document.getElementById("load-more");
@@ -1579,7 +1584,7 @@ function renderVehicles() {
     container.innerHTML = "";
   }
 
-  // Determine slice for this “page”
+  // Determine slice for this "page"
   const start = currentPage * ITEMS_PER_PAGE;
   const end = start + ITEMS_PER_PAGE;
   const slice = vehicles.slice(start, end);
@@ -1857,13 +1862,14 @@ document.addEventListener("DOMContentLoaded", function () {
   renderVehicles();
   renderSolarPanels();
 
-  // Add event listeners to view details buttons
-  document.querySelectorAll(".view-details").forEach((btn) => {
-    btn.addEventListener("click", function () {
-      const id = this.getAttribute("data-id");
-      const type = this.getAttribute("data-type");
+  // FIXED: Use event delegation for view details buttons
+  document.addEventListener("click", function (event) {
+    const viewDetailsButton = event.target.closest(".view-details");
+    if (viewDetailsButton) {
+      const id = viewDetailsButton.getAttribute("data-id");
+      const type = viewDetailsButton.getAttribute("data-type");
       openModal(id, type);
-    });
+    }
   });
 
   // Hamburger menu functionality
