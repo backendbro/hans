@@ -933,6 +933,10 @@ const numberedVehicles = [
       "https://www.dubicars.com/images/c364f9/w_1300x760/two-flags-for-cars-trading-fze/2e54ab27-5321-4d98-b9bb-03528afd1207.jpeg",
       "https://www.dubicars.com/images/262884/w_1300x760/two-flags-for-cars-trading-fze/bf4f5850-3091-476a-9748-489df984ece8.jpeg",
       "https://www.dubicars.com/images/672b59/w_1300x760/two-flags-for-cars-trading-fze/a7181aa1-5fae-43e3-9569-04693b0d46f7.jpeg",
+      "https://www.dubicars.com/images/4a4a86/w_1300x760/two-flags-for-cars-trading-fze/161e348f-8d62-4ee5-8aa5-2de24bd1a9b8.jpeg",
+      "https://www.dubicars.com/images/d20cb6/w_1300x760/two-flags-for-cars-trading-fze/293355cc-fd99-42d3-90c2-d55545e286e5.jpeg",
+      "https://www.dubicars.com/images/9a7686/w_1300x760/two-flags-for-cars-trading-fze/18befdac-407f-4cd5-9fb7-fde253a7e899.jpeg",
+      "https://www.dubicars.com/images/155134/w_1300x760/two-flags-for-cars-trading-fze/093c379d-c987-4fb8-99b4-2de520da0bfe.jpeg",
     ],
     features: ["3.0L Diesel Engine", "4x4 Manual", "Heavy-Duty Build"],
     description:
