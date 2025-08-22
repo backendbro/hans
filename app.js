@@ -816,10 +816,21 @@ const numberedVehicles = [
   },
   {
     id: 17,
-    name: "Mitsubishi L200 Sportero 2024 - LHD",
+    name: "Mitsubishi L200",
     price: "$13,000",
     image:
-      "https://i.pinimg.com/736x/b7/75/54/b77554fb1bedb868d90c50a26f4583ea.jpg",
+      "https://www.dubicars.com/images/529964/w_1300x760/target-motors-2/cf478e52-a607-424a-bf06-1d5bf1a8ed7e.jpg",
+    images: [
+      "https://www.dubicars.com/images/965def/w_1300x760/target-motors-2/2533f0b7-e753-4e65-bbf4-8d648af23215.jpg",
+      "https://www.dubicars.com/images/a1ddc9/w_1300x760/target-motors-2/4cdb51b4-a78a-40a2-a719-7f9153dcbccd.jpg",
+      "https://www.dubicars.com/images/dc8190/w_1300x760/target-motors-2/ea40ca30-a765-44ca-847a-ebdffadf42d3.jpg",
+      "https://www.dubicars.com/images/ae0865/w_1300x760/target-motors-2/359f678d-f5e7-49c5-9a35-755fa6952063.jpg",
+      "https://www.dubicars.com/images/a03e4e/w_1300x760/target-motors-2/f491fa64-f5db-4dea-8d4f-c79831a0f75e.jpg",
+      "https://www.dubicars.com/images/6c931c/w_1300x760/target-motors-2/59150295-a565-4f64-a5db-6607ecbaf9aa.jpg",
+      "https://www.dubicars.com/images/1c2a61/w_1300x760/target-motors-2/df7a7b19-4733-44e0-894d-5edef6da1642.jpg",
+      "https://www.dubicars.com/images/ec9efd/w_1300x760/target-motors-2/e3fc7e4f-d1e5-41be-9e5e-32ff3b9d0fd3.jpg",
+      "https://www.dubicars.com/images/529964/w_1300x760/target-motors-2/cf478e52-a607-424a-bf06-1d5bf1a8ed7e.jpg",
+    ],
     features: [
       "2.4L Diesel Engine",
       "Automatic Transmission",
@@ -846,7 +857,18 @@ const numberedVehicles = [
     name: "Ford Ranger XLT 2.0L Bi-Turbo 2024 - LHD",
     price: "$19,800",
     image:
-      "https://i.pinimg.com/736x/5d/5c/87/5d5c87681931b5181d7ef9a3c83bf5e9.jpg",
+      "https://www.dubicars.com/images/ff47c2/w_1300x760/target-motors-2/7e597c3c-7a11-4e98-af10-aacf4f2a3113.jpg",
+    images: [
+      "https://www.dubicars.com/images/ba1bf3/w_1300x760/target-motors-2/295d4cac-83fb-44d8-90c6-f0688b9a6a8f.jpg",
+      "https://www.dubicars.com/images/79a65c/w_1300x760/target-motors-2/a120f8d1-8c03-4295-9deb-bf8251ac8302.jpg",
+      "https://www.dubicars.com/images/feae60/w_1300x760/target-motors-2/22645a46-07e6-4fab-b147-df65e005ddf6.jpg",
+      "https://www.dubicars.com/images/19a6e8/w_1300x760/target-motors-2/f3fa557d-0f45-4fa0-9000-caff4828e907.jpg",
+      "https://www.dubicars.com/images/ed4581/w_1300x760/target-motors-2/04519f58-5791-4acc-9d57-ff62a7c65a53.jpg",
+      "https://www.dubicars.com/images/e28cc4/w_1300x760/target-motors-2/236514de-1590-4856-90a7-af42a946d160.jpg",
+      "https://www.dubicars.com/images/aaa466/w_1300x760/target-motors-2/bc9a9337-e9cc-4ef3-a261-f81ba042027c.jpg",
+      "https://www.dubicars.com/images/16f283/w_1300x760/target-motors-2/060c6acd-0d2d-4a77-805e-8e81cc06ed09.jpg",
+      "https://www.dubicars.com/images/3c891c/w_1300x760/target-motors-2/9645dc5e-5310-4591-88c9-dc327e7b3225.jpg",
+    ],
     features: ["2.0L Bi-Turbo Diesel", "10-Speed Auto", "Off-Road Capable"],
     description:
       "Ford's top-tier pickup packed with tech and power, perfect for utility, family use, or rugged terrain.",
@@ -866,10 +888,20 @@ const numberedVehicles = [
   },
   {
     id: 19,
-    name: "Land Cruiser 300 GX-R V6 2024 - LHD",
-    price: "$19,000",
+    name: "Toyota Land Cruiser VX 3.5L",
+    price: "$39,000",
     image:
-      "https://i.pinimg.com/736x/63/3a/f0/633af0806a1379734f6f5ef65904ba55.jpg",
+      "https://www.dubicars.com/images/323ead/w_1300x760/mercury-global/38aecd25-8508-4dbc-8fc0-08c430752470.jpg",
+    images: [
+      "https://www.dubicars.com/images/4692c0/w_1300x760/mercury-global/3c5a3693-ecfd-4ccf-ad19-b30eae52a403.jpg",
+      "https://www.dubicars.com/images/44866e/w_1300x760/mercury-global/b93a5b51-c0a9-4b13-8b2a-fe6c0c4a5e0f.jpg",
+      "https://www.dubicars.com/images/c5fb83/w_1300x760/mercury-global/6d4f741b-acd9-4d15-9ca7-52f9a874a2d4.jpg",
+      "https://www.dubicars.com/images/a1aca7/w_1300x760/mercury-global/dcfc6883-f641-4f87-b36a-b1adc43c817a.jpg",
+      "https://www.dubicars.com/images/b38ed4/w_1300x760/mercury-global/195e9f7c-1ad5-4621-a720-f1c533608d9c.jpg",
+      "https://www.dubicars.com/images/8e52c9/w_1300x760/mercury-global/d857d9bd-222f-4b8b-8af3-a20fb64c3f8f.jpg",
+      "https://www.dubicars.com/images/3a9965/w_1300x760/mercury-global/b1572e9b-6fb6-43dc-975c-61176f6ac416.jpg",
+      "https://www.dubicars.com/images/0b38d0/w_1300x760/mercury-global/d2fc61b4-4c11-48a6-a0cb-fa8131c4d539.jpg",
+    ],
     features: [
       "3.5L Twin Turbo V6",
       "10-Speed Automatic",
@@ -893,10 +925,15 @@ const numberedVehicles = [
   },
   {
     id: 20,
-    name: "Isuzu D-MAX 3.0L 4x4 2024 - LHD",
+    name: "Isuzu DMax ISUZU",
     price: "$11,500",
     image:
-      "https://i.pinimg.com/736x/13/17/53/13175313961eb887f864415652ffdaef.jpg",
+      "https://www.dubicars.com/images/b317f8/w_1300x760/two-flags-for-cars-trading-fze/5d587562-da7b-4efa-bfab-8b9fc798f6b0.jpeg",
+    images: [
+      "https://www.dubicars.com/images/c364f9/w_1300x760/two-flags-for-cars-trading-fze/2e54ab27-5321-4d98-b9bb-03528afd1207.jpeg",
+      "https://www.dubicars.com/images/262884/w_1300x760/two-flags-for-cars-trading-fze/bf4f5850-3091-476a-9748-489df984ece8.jpeg",
+      "https://www.dubicars.com/images/672b59/w_1300x760/two-flags-for-cars-trading-fze/a7181aa1-5fae-43e3-9569-04693b0d46f7.jpeg",
+    ],
     features: ["3.0L Diesel Engine", "4x4 Manual", "Heavy-Duty Build"],
     description:
       "A robust and fuel-efficient pickup, built for reliability in demanding conditions and commercial use.",
