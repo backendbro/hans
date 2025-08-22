@@ -417,24 +417,6 @@ const numberedVehicles = [
       comfort: "Acoustic Insulation",
     },
   },
-  {
-    id: 1,
-    name: "2025 Winnebago Revel 44N AWD",
-    price: "$19,995",
-    image:
-      "https://cdn-media.tilabs.io/v1/media/67fd46a89521656751518ca5.jpg?width=1024&height=768&quality=70&upsize=true", // Replace with an actual image of the RV if available
-    features: ["4.1 kWh Lithium", "215W Solar", "2.0L Turbo Diesel"],
-    description:
-      "Built on a Mercedes AWD Sprinter chassis with premium lithium power, solar, wet bath, and flexible living space. Only 4K miles – dealer demo.",
-    specs: {
-      engine: "2.0L Turbo Diesel",
-      transmission: "9-Speed Automatic",
-      battery: "4.1 kWh Lithium",
-      solar: "215 Watts",
-      inverter: "2,000 Watts",
-      seating: "Up to 4 Adults",
-    },
-  },
 
   {
     id: 2,
