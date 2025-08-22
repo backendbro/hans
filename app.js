@@ -750,34 +750,21 @@ const numberedVehicles = [
   },
 
   {
-    id: 13,
-    name: "Toyota Hilux",
-    price: "$7,000",
-    image:
-      "https://www.dubicars.com/images/6b01e1/w_1300x760/target-motors-3/3da82559-1da8-47de-8f43-82cfa1febba2.jpg",
-    features: ["Reliable 4x4 Utility", "2.8L Turbo Diesel", "Durable Bed"],
-    description:
-      "The Toyota Hilux is a legendary pickup truck known for its reliability, toughness, and off-road capability, built to handle both work and adventure.",
-    specs: {
-      engine: "2.8L 4-Cylinder Turbo Diesel",
-      power: "201 hp",
-      transmission: "6-Speed Automatic",
-      drivetrain: "4WD",
-      torque: "500 Nm",
-      towingCapacity: "3,500 kg",
-      groundClearance: "310 mm",
-      fuelCapacity: "80 L",
-      seating: "5 Adults",
-      bedLength: "5 ft",
-      safety: "Toyota Safety Sense, 7 Airbags",
-    },
-  },
-  {
     id: 14,
     name: "Toyota Hilux GR Sport 4.0L",
     price: "$9,990",
     image:
       "https://www.dubicars.com/images/330475/w_1300x760/aaa-motors-fze/faad2b50-85c0-4991-b790-e3a7f41ff190.jpeg",
+    images: [
+      "https://www.dubicars.com/images/363762/w_1300x760/ryan-motors-fze/ab9a905a-b9d0-4543-9268-d8eb7ccae619.jpg",
+      "https://www.dubicars.com/images/e44e58/w_1300x760/ryan-motors-fze/9f3f9e23-c182-474a-aa7c-c2d06b1cab28.jpg",
+      "https://www.dubicars.com/images/e0dea8/w_1300x760/ryan-motors-fze/1eedf3a7-f5e3-49d5-894d-9c4060246a8f.jpg",
+      "https://www.dubicars.com/images/7423dc/w_1300x760/ryan-motors-fze/4ac3bca0-4443-494a-8de1-123d20e5b95a.jpg",
+      "https://www.dubicars.com/images/b82214/w_1300x760/ryan-motors-fze/1a0cb221-53bc-4d3c-b01f-8f1eac227f1b.jpg",
+      "https://www.dubicars.com/images/91e449/w_1300x760/ryan-motors-fze/d1460566-a3e9-459f-9a83-b00180e92ebf.jpg",
+      "https://www.dubicars.com/images/543322/w_1300x760/ryan-motors-fze/40c00cc3-6d79-4ef6-8242-69147cc6fd8f.jpg",
+      "https://www.dubicars.com/images/98d02c/w_1300x760/ryan-motors-fze/9a77a8da-4113-434e-a7ff-bb086a86f6af.jpg",
+    ],
     features: ["4.0L V6 Engine", "GR Sport Design", "Off-Road Suspension"],
     description:
       "The Toyota Hilux GR Sport 4.0L combines bold design with legendary toughness, powered by a V6 engine and enhanced with Gazoo Racing performance and styling.",
@@ -798,10 +785,18 @@ const numberedVehicles = [
 
   {
     id: 16,
-    name: "Nissan Patrol SE Platinum 2024 - LHD",
-    price: "$15,000",
+    name: "Nissan Patrol LE Platinum 5.6L",
+    price: "$25,000",
     image:
-      "https://i.pinimg.com/736x/87/8b/97/878b97db8775f526decec69ddfdc0d94.jpg",
+      "https://www.dubicars.com/images/7e8ac4/w_1300x760/bin-humaidan-motors/ab6a47e2-ab92-4ef4-aad1-7b8474ee5c8e.jpeg",
+    images: [
+      "https://www.dubicars.com/images/949d17/w_1300x760/bin-humaidan-motors/857d6008-c2fb-4265-81d6-704e7bf74b41.jpeg",
+      "https://www.dubicars.com/images/d6d97e/w_1300x760/bin-humaidan-motors/7f195349-73e2-41e2-a77b-174628897283.jpeg",
+      "https://www.dubicars.com/images/1fb0d7/w_1300x760/bin-humaidan-motors/d03c4295-bd7b-4ac2-a77a-c7ff166bc2c5.jpeg",
+      "https://www.dubicars.com/images/cd2f00/w_1300x760/bin-humaidan-motors/b09ca6b6-c8e4-4548-ad49-4dddf813e1a4.jpeg",
+      "https://www.dubicars.com/images/cb955c/w_1300x760/bin-humaidan-motors/af1cbeca-3949-4b04-a13e-eac61045a511.jpeg",
+      "https://www.dubicars.com/images/610fa7/w_1300x760/bin-humaidan-motors/e02e0e32-976a-4cf7-ba6c-1d54649621a5.jpeg",
+    ],
     features: ["5.6L V8 Engine", "Automatic Transmission", "Luxury Interior"],
     description:
       "A full-size luxury SUV built for performance and comfort, equipped with a 5.6L V8 engine and high-end features for on and off-road confidence.",
@@ -921,10 +916,19 @@ const numberedVehicles = [
   },
   {
     id: 21,
-    name: "Hyundai Santa Fe 2.5L 2024 - LHD",
+    name: "Hyundai Santa Fe",
     price: "$19,900",
     image:
-      "https://i.pinimg.com/1200x/b7/65/99/b7659904fc1afcf9f95d3a72ced4ced9.jpg",
+      "https://www.dubicars.com/images/04c6ef/w_1300x760/ghazni-motors/29cd4648-e429-44fb-992e-8bd6add30519.jpeg",
+    images: [
+      "https://www.dubicars.com/images/675308/w_1300x760/ghazni-motors/5fcaf02f-7f93-4447-8409-dcab2c482935.jpeg",
+      "https://www.dubicars.com/images/a8a608/w_1300x760/ghazni-motors/c76c7f1a-31a1-4850-bbd4-a2455d7a5b6c.jpeg",
+      "https://www.dubicars.com/images/315308/w_1300x760/ghazni-motors/7c9aab76-1b63-44f3-8ba0-9c74139e0c6a.jpeg",
+      "https://www.dubicars.com/images/0ad9ba/w_1300x760/ghazni-motors/cf85cdf4-884a-40d8-b055-9c157f992021.jpeg",
+      "https://www.dubicars.com/images/92b242/w_1300x760/ghazni-motors/c497ee0e-8155-44ad-a85f-1b13f53d70d2.jpeg",
+      "https://www.dubicars.com/images/7591ff/w_1300x760/ghazni-motors/c9792ec9-514f-48b3-92cf-d237d3def396.jpeg",
+      "https://www.dubicars.com/images/01548a/w_1300x760/ghazni-motors/308e2754-1c6f-444b-99e1-c3b3c6446fd2.jpeg",
+    ],
     features: ["2.5L Petrol Engine", "7-Seater SUV", "Comfort & Tech Focused"],
     description:
       "Family-friendly midsize SUV with a spacious interior, advanced safety features, and modern infotainment.",
