@@ -13,7 +13,7 @@ const numberedVehicles = [
   {
     id: 7,
     name: "2024 Toyota Hiace Commuter GL",
-    price: "$10,000",
+    //price: "$10,000",
     image: "https://casauto.com/wp-content/uploads/2024/08/IMG_3577.jpg",
     images: [
       "https://casauto.com/wp-content/uploads/2024/08/IMG_3577.jpg",
@@ -43,7 +43,7 @@ const numberedVehicles = [
   {
     id: 10,
     name: "Toyota Hilux Adventure 4.0L",
-    price: "$12,500",
+    //price: "$12,500",
     image:
       "https://www.dubicars.com/images/28e34b/w_1300x760/al-kuwait-used-cars-exhibition-llc/feaada3c-6cd0-4dc5-95ff-909b1783f1e4.jpeg",
     images: [
@@ -80,7 +80,7 @@ const numberedVehicles = [
   {
     id: 11,
     name: "2024 Mitsubishi Rosa Deluxe",
-    price: "$15,800",
+    //price: "$15,800",
     image:
       "https://www.dubicars.com/images/edf931/w_1300x760/steerwell-auto/5b33ca55-5b65-4595-82c1-9e1e6627d671.jpg",
     images: [
@@ -112,7 +112,7 @@ const numberedVehicles = [
   {
     id: 12,
     name: "Toyota Hilux 2024 GR SPORT V6 4.0L",
-    price: "$9,700",
+    //price: "$9,700",
     image:
       "https://www.dubicars.com/images/dd1c72/w_1300x760/unique-cars-fze/a44306ff-2635-4a63-8d88-0c60c6296bae.jpeg",
     images: [
@@ -153,7 +153,7 @@ const numberedVehicles = [
   {
     id: 15,
     name: "Toyota Hilux DC 2.7L SR5 MT 4x4 2024 - LHD",
-    price: "$8,000",
+    //price: "$8,000",
     image:
       "https://www.dubicars.com/images/6b01e1/w_1300x760/target-motors-3/3da82559-1da8-47de-8f43-82cfa1febba2.jpg",
     images: [
@@ -193,7 +193,7 @@ const numberedVehicles = [
   {
     id: 14,
     name: "Toyota Hiace VIP Luxury Seat Commuter 3.5L A/T",
-    price: "$14,000",
+    //price: "$14,000",
     image:
       "https://www.dubicars.com/images/21b605/w_1300x760/eg-auto-fz-llc/0404a2e4-05bb-48bf-ad80-7c837579c436.jpg",
     images: [
@@ -225,7 +225,7 @@ const numberedVehicles = [
   {
     id: 16,
     name: "Toyota Coaster 2.7L",
-    price: "$11,000",
+    //price: "$11,000",
     image:
       "https://www.dubicars.com/images/8928ee/w_1300x760/sahara-motors-fze/61f97dfd-e42b-4b09-b248-c467fe64cef2.jpeg",
     images: [
@@ -264,7 +264,7 @@ const numberedVehicles = [
   {
     id: 17,
     name: "Toyota Land Cruiser Pick Up LC79 DC V8 Diesel 4.5L",
-    price: "$15,000",
+    //price: "$15,000",
     image:
       "https://www.dubicars.com/images/6192f2/wf_1300x760/force-motors-fze/f57b2cc5-78f7-416d-a152-c2452e5b49fb.jpeg",
     images: [
@@ -298,7 +298,7 @@ const numberedVehicles = [
   {
     id: 15,
     name: "Toyota Hiace GLS STD Roof",
-    price: "$8,500",
+    //price: "$8,500",
     image:
       "https://www.dubicars.com/images/289d81/w_1300x760/target-motors-fze/f89dff7a-3ce2-4a5d-bd8e-396846476516.jpg",
     images: [
@@ -328,7 +328,7 @@ const numberedVehicles = [
   {
     id: 18,
     name: "2025 Toyota Prado Adventure 2.8L Diesel 4WD 7-Seat Automatic",
-    price: "$18,000",
+    //price: "$18,000",
     image:
       "https://www.dubicars.com/images/ea4d5d/w_1300x760/sahara-motors/dde978b8-e157-45ba-ab0c-8c1d41031b1b.jpeg",
     images: [
@@ -365,7 +365,7 @@ const numberedVehicles = [
   {
     id: 13,
     name: "2024 Toyota Hiace Grand Cabin",
-    price: "$11,300",
+    //price: "$11,300",
     image:
       "https://picture1.goo-net.com/7000610017/30250307/J/70006100173025030700100.jpg",
     images: [
@@ -393,7 +393,7 @@ const numberedVehicles = [
   {
     id: 15,
     name: "2024 Toyota Hiace Super Commuter",
-    price: "$12,000",
+    //price: "$12,000",
     image:
       "https://gsat.jp/wp-content/uploads/2023/04/2023-Toyota-hiace-commuter-Super-long-GL-New-9.jpg",
     images: [
@@ -421,7 +421,7 @@ const numberedVehicles = [
   {
     id: 2,
     name: "2024 Winnebago ROAM",
-    price: "$20,995",
+    //price: "$20,995",
     image:
       "https://cdn-media.tilabs.io/v1/media/685b7e6ba3b71b289e56e72b.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -445,7 +445,7 @@ const numberedVehicles = [
   {
     id: 4,
     name: "2025 OGV Luxury Coach V-CRUISE 10OBA",
-    price: "$16,400",
+    //price: "$16,400",
     image:
       "https://cdn-media.tilabs.io/v1/media/6723dbde288d7c4b3c37d393.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -478,7 +478,7 @@ const numberedVehicles = [
   {
     id: 4,
     name: "2018 Airstream Interstate Grand Tour EXT 3500",
-    price: "$15,000",
+    //price: "$15,000",
     image:
       "https://cdn-media.tilabs.io/v1/media/67d05f8ed94b74730177f5ff.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -510,7 +510,7 @@ const numberedVehicles = [
   {
     id: 5,
     name: "2021 Airstream Interstate 24GL",
-    price: "$12,000",
+    //price: "$12,000",
     image:
       "https://cdn-media.tilabs.io/v1/media/6871370eec29860fcc4f99ff.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -543,7 +543,7 @@ const numberedVehicles = [
   {
     id: 7,
     name: "2026 Thor Motor Coach TIBURON 24XL",
-    price: "$19,950",
+    //price: "$19,950",
     image:
       "https://cdn-media.tilabs.io/v1/media/687137320435447ce06d2de3.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -578,7 +578,7 @@ const numberedVehicles = [
   {
     id: 7,
     name: "2026 Winnebago REVEL SPORT 44C - ATH EDITION",
-    price: "$17,500",
+    //price: "$17,500",
     image:
       "https://cdn-media.tilabs.io/v1/media/6883c74d5022c8703f29c4be.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -612,7 +612,7 @@ const numberedVehicles = [
   {
     id: 8,
     name: "2021 Thor Motor Coach GEMINI 23TW",
-    price: "$14,990",
+    //price: "$14,990",
     image:
       "https://cdn-media.tilabs.io/v1/media/685e2a2b0aa5a500167ea636.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -642,7 +642,7 @@ const numberedVehicles = [
   {
     id: 9,
     name: "2021 Storyteller Overland Stealth Mode",
-    price: "$10,990",
+    //price: "$10,990",
     image:
       "https://cdn-media.tilabs.io/v1/media/672e3f5607785245da0d35d4.jpg?width=1024&height=768&quality=70&upsize=true",
     images: [
@@ -675,7 +675,7 @@ const numberedVehicles = [
   {
     id: 10,
     name: "Toyota Hilux Adventure 4.0L",
-    price: "$12,500",
+    //price: "$12,500",
     image:
       "https://www.dubicars.com/images/28e34b/w_1300x760/al-kuwait-used-cars-exhibition-llc/feaada3c-6cd0-4dc5-95ff-909b1783f1e4.jpeg",
     images: [
@@ -704,7 +704,7 @@ const numberedVehicles = [
   {
     id: 11,
     name: "Toyota Hilux 4x4",
-    price: "$8,500",
+    //price: "$8,500",
     image:
       "https://www.dubicars.com/images/571546/w_1300x760/autocars/25234a80-08ef-4563-99a7-8e82fe97c904.jpeg",
     images: [
@@ -734,7 +734,7 @@ const numberedVehicles = [
   {
     id: 14,
     name: "Toyota Hilux GR Sport 4.0L",
-    price: "$9,990",
+    //price: "$9,990",
     image:
       "https://www.dubicars.com/images/330475/w_1300x760/aaa-motors-fze/faad2b50-85c0-4991-b790-e3a7f41ff190.jpeg",
     images: [
@@ -768,7 +768,7 @@ const numberedVehicles = [
   {
     id: 16,
     name: "Nissan Patrol LE Platinum 5.6L",
-    price: "$25,000",
+    //price: "$25,000",
     image:
       "https://www.dubicars.com/images/7e8ac4/w_1300x760/bin-humaidan-motors/ab6a47e2-ab92-4ef4-aad1-7b8474ee5c8e.jpeg",
     images: [
@@ -799,7 +799,7 @@ const numberedVehicles = [
   {
     id: 17,
     name: "Mitsubishi L200",
-    price: "$13,000",
+    //price: "$13,000",
     image:
       "https://www.dubicars.com/images/529964/w_1300x760/target-motors-2/cf478e52-a607-424a-bf06-1d5bf1a8ed7e.jpg",
     images: [
@@ -837,7 +837,7 @@ const numberedVehicles = [
   {
     id: 18,
     name: "Ford Ranger XLT 2.0L Bi-Turbo 2024 - LHD",
-    price: "$19,800",
+    //price: "$19,800",
     image:
       "https://www.dubicars.com/images/ff47c2/w_1300x760/target-motors-2/7e597c3c-7a11-4e98-af10-aacf4f2a3113.jpg",
     images: [
@@ -871,7 +871,7 @@ const numberedVehicles = [
   {
     id: 19,
     name: "Toyota Land Cruiser VX 3.5L",
-    price: "$39,000",
+    //price: "$39,000",
     image:
       "https://www.dubicars.com/images/323ead/w_1300x760/mercury-global/38aecd25-8508-4dbc-8fc0-08c430752470.jpg",
     images: [
@@ -908,7 +908,7 @@ const numberedVehicles = [
   {
     id: 20,
     name: "Isuzu DMax ISUZU",
-    price: "$11,500",
+    //price: "$11,500",
     image:
       "https://www.dubicars.com/images/b317f8/w_1300x760/two-flags-for-cars-trading-fze/5d587562-da7b-4efa-bfab-8b9fc798f6b0.jpeg",
     images: [
@@ -940,7 +940,7 @@ const numberedVehicles = [
   {
     id: 21,
     name: "Hyundai Santa Fe",
-    price: "$19,900",
+    //price: "$19,900",
     image:
       "https://www.dubicars.com/images/04c6ef/w_1300x760/ghazni-motors/29cd4648-e429-44fb-992e-8bd6add30519.jpeg",
     images: [
@@ -981,7 +981,7 @@ const solarPanels = [
   {
     id: 28,
     name: "7.3kW Solar Kit - Mission Solar 410 Black & Sol-Ark Hybrid Inverter",
-    price: "$3,499",
+    //price: "$3,499",
     image:
       "https://cdn11.bigcommerce.com/s-3nrr5bfo5i/images/stencil/500x659/products/5921/22261/solar-panel-kit-mono-120-AllBlack-SolArk__07100.1750108757.jpg?c=2",
     features: [
@@ -1002,7 +1002,7 @@ const solarPanels = [
   {
     id: 24,
     name: "Pytes V5 Battery | EG4 Hybrid Inverter Energy Storage Bundle",
-    price: "$2,299",
+    //price: "$2,299",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/attribute_rule_images/661_source_1750181819.png",
     features: [
@@ -1023,7 +1023,7 @@ const solarPanels = [
   {
     id: 20,
     name: "EG4 12000XP & Indoor Wallmount Battery Bundle",
-    price: "$999",
+    //price: "$999",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/products/9383/10450/KIT-E0013__70347.1746565563.png?c=1",
     features: [
@@ -1045,7 +1045,7 @@ const solarPanels = [
   {
     id: 19,
     name: "EG4 3 Slot Server Rack 48V Battery Kit",
-    price: "$1,295",
+    //price: "$1,295",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/original/products/9361/10445/eg4_3_slot_rack_1__09508.1746468616.png?c=1",
     features: [
@@ -1067,7 +1067,7 @@ const solarPanels = [
   {
     id: 29,
     name: "Trina Solar 425W Mono Bifacial All-Black Panel",
-    price: "$229",
+    //price: "$229",
     image:
       "https://cdn11.bigcommerce.com/s-3nrr5bfo5i/images/stencil/500x659/products/5825/22208/mono-144-black-on-black-front-back__66573.1732582645.jpg?c=2",
     features: ["425 W Output", "Bifacial Technology", "All‑Black Design"],
@@ -1084,7 +1084,7 @@ const solarPanels = [
   {
     id: 30,
     name: "IronRidge Ground Mount Kit for 40 Solar Panels",
-    price: "$2,199",
+    //price: "$2,199",
     image:
       "https://cdn11.bigcommerce.com/s-3nrr5bfo5i/images/stencil/500x659/products/2176/7861/Ironridge_Ground_Mount__35075.1583801307.jpg?c=2",
     features: [
@@ -1105,7 +1105,7 @@ const solarPanels = [
   {
     id: 21,
     name: "EG4 FlexBOSS18 13kW AC Hybrid Inverter",
-    price: "$1,599",
+    //price: "$1,599",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/640w/products/7837/8913/FlexBOSS18_-_Front__70491.1739398622.jpg?c=1",
     features: [
@@ -1127,7 +1127,7 @@ const solarPanels = [
   {
     id: 22,
     name: "EG4 BossBox Cable Kit",
-    price: "$189.99",
+    //price: "$189.99",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/640w/products/8605/9673/EG4_BOSSBox_Cable_Kit_1__00114.1742587938.jpg?c=1",
     features: [
@@ -1149,7 +1149,7 @@ const solarPanels = [
   {
     id: 14,
     name: "EG4 GridBOSS MID v3.1",
-    price: "$599",
+    //price: "$599",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/products/10255/11557/EG4_GridBOSS_MID_1__72162.1754343293.png?c=1",
     features: [
@@ -1170,7 +1170,7 @@ const solarPanels = [
   {
     id: 27,
     name: "3kW EG4 Off-Grid Inverter Battery Charger",
-    price: "$699",
+    //price: "$699",
     image:
       "https://cdn11.bigcommerce.com/s-3nrr5bfo5i/images/stencil/500x659/products/5480/21011/eg4_3kw_inverter__43184.1690565452.jpg?c=2",
     features: [
@@ -1192,7 +1192,7 @@ const solarPanels = [
   {
     id: 25,
     name: "EG4 BOSSBox Energy Storage Enclosure",
-    price: "$499",
+    //price: "$499",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/products/7834/9614/EG4_BossBox_1__18704.1741998022.png?c=1",
     features: [
@@ -1213,7 +1213,7 @@ const solarPanels = [
   {
     id: 26,
     name: "12kW EG4 Hybrid On/Off-Grid Inverter Battery Charger",
-    price: "$2,799",
+    //price: "$2,799",
     image:
       "https://cdn11.bigcommerce.com/s-3nrr5bfo5i/images/stencil/500x659/products/5478/21005/EG4_18KPV_inverter__48011.1690563965.jpg?c=2",
     features: [
@@ -1234,7 +1234,7 @@ const solarPanels = [
   {
     id: 23,
     name: "EG4 100Ah WallMount Battery Paralleling Cable Kit",
-    price: "$49.99",
+    //price: "$49.99",
     image:
       "hhttps://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/640w/products/8875/9952/WallMount_100Ah_Paralleling_Kit_-_All_1__00001.1743089031.jpg?c=1",
     features: [
@@ -1255,7 +1255,7 @@ const solarPanels = [
   {
     id: 13,
     name: "EG4 FlexBOSS21 Inverter V.1.1 | 48V Split Phase",
-    price: "$799",
+    //price: "$799",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/products/10257/11554/FlexGrid_Bundle_2___54730__87710.1754333578.jpg?c=1",
     features: [
@@ -1276,7 +1276,7 @@ const solarPanels = [
   {
     id: 1,
     name: "Premium SolarMax 400W",
-    price: "$1,299",
+    //price: "$1,299",
     image:
       "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     features: ["400W Output", "22% Efficiency", "25-Year Warranty"],
@@ -1293,7 +1293,7 @@ const solarPanels = [
   {
     id: 2,
     name: "SolarTech Pro 380W",
-    price: "$1,150",
+    //price: "$1,150",
     image:
       "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     features: ["380W Output", "21.5% Efficiency", "Weather Resistant"],
@@ -1310,7 +1310,7 @@ const solarPanels = [
   {
     id: 3,
     name: "EcoPower Thin-Film 350W",
-    price: "$950",
+    //price: "$950",
     image:
       "https://image.made-in-china.com/365f3j00YPSimfrcJhpR/Powerful-Thin-Film-CIGS-Flexible-Solar-Panels-FLEX-03M-350W-.webp",
     features: ["350W Output", "Flexible Design", "Low Light Performance"],
@@ -1327,7 +1327,7 @@ const solarPanels = [
   {
     id: 15,
     name: "EG4 12k BTU Hybrid Solar Mini-Split",
-    price: "$1,299",
+    //price: "$1,299",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/products/10163/11429/Mini_Split__56027.1752860557.png?c=1",
     features: [
@@ -1348,7 +1348,7 @@ const solarPanels = [
   {
     id: 16,
     name: "EG4 EV Charging Kit",
-    price: "$499",
+    //price: "$499",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/products/9921/11097/KIT-E0019-1__74217.1749829008.png?c=1",
     features: [
@@ -1369,7 +1369,7 @@ const solarPanels = [
   {
     id: 18,
     name: "EG4 Off-Grid Shed & Garage Solar Kit (KIT-E0017)",
-    price: "$2,299",
+    //price: "$2,299",
     image:
       "https://cdn11.bigcommerce.com/s-bi8c0htqsn/images/stencil/1280x1280/products/9563/10650/eg4_battery_rack___77433.1748524378.png?c=1",
     features: [
@@ -1392,7 +1392,7 @@ const solarPanels = [
   {
     id: 4,
     name: "SolarMax Home System",
-    price: "$12,999",
+    //price: "$12,999",
     image:
       "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     features: ["5kW System", "Battery Storage", "Smart Monitoring"],
@@ -1409,7 +1409,7 @@ const solarPanels = [
   {
     id: 5,
     name: "SunPower Maxeon 6 AC 440W",
-    price: "$1,399",
+    //price: "$1,399",
     image:
       "https://solaranalytica.com/wp-content/uploads/2022/04/Sunpower-Maxeon-6-Review-2-scaled.jpeg",
     features: ["440W Output", "22.8% Efficiency", "25-Year Warranty"],
@@ -1426,7 +1426,7 @@ const solarPanels = [
   {
     id: 12,
     name: "SunPower Maxeon 6 425 W (All‑Black)",
-    price: "$1,799",
+    //price: "$1,799",
     image:
       "https://cdn11.bigcommerce.com/s-3nrr5bfo5i/images/stencil/500x659/products/6164/22879/112_cells_half_mono__72089.1734478380.png?c=2",
     features: ["425 W Output", "22 % Efficiency", "25‑Year Product Warranty"],
@@ -1443,7 +1443,7 @@ const solarPanels = [
   {
     id: 13,
     name: "SunPower Maxeon 6 AC COM 460 W",
-    price: "€519",
+    //price: "€519",
     image:
       "https://www.todoensolar.com/WebRoot/StoreES/Shops/61987244/65AA/3DBE/FF32/219D/A808/0A0C/6D0E/D8C7/SunPower_Maxeon_6_COM_ml.png",
     features: ["460 W Output", "21.6 % Efficiency", "40‑Year Warranty"],
@@ -1460,7 +1460,7 @@ const solarPanels = [
   {
     id: 14,
     name: "SunPower Maxeon 6 AC Black 425 W",
-    price: "$1,749",
+    //price: "$1,749",
     image:
       "https://api.yourenergyanswers.com/storage/photos/gmiYi74rHqeSv135OGowf9i0FWZXQuBKSgzlrxRb.jpeg",
     features: ["425 W Output", "22 % Efficiency", "Industry-leading Warranty"],
@@ -1477,7 +1477,7 @@ const solarPanels = [
   {
     id: 15,
     name: "REC Alpha Pure‑R 410 W",
-    price: "€450",
+    //price: "€450",
     image:
       "https://www.solarmatters.com.au/wp-content/uploads/2016/03/REC-Alpha-Pure-R-410Wp.png",
     features: ["410 W Output", "21.2 % Efficiency", "Lead‑Free Design"],
@@ -1494,7 +1494,7 @@ const solarPanels = [
   {
     id: 16,
     name: "REC Alpha Pure‑R 420 W",
-    price: "€460",
+    //price: "€460",
     image:
       "https://www.solarelectricsupply.com/media/product-images/SolarPanel/REC/REC-residential-solar-panel-system.jpg",
     features: ["420 W Output", "21.8 % Efficiency", "7000 Pa Load"],
@@ -1511,7 +1511,7 @@ const solarPanels = [
   {
     id: 17,
     name: "REC Alpha Pure‑RX 470 W",
-    price: "€490",
+    //price: "€490",
     image:
       "https://www.recgroup.com/sites/default/files/2024-05/REC_Alpha_Pure_1.png",
     features: ["470 W Output", "22.6 % Efficiency", "High Power Density"],
@@ -1528,7 +1528,7 @@ const solarPanels = [
   {
     id: 18,
     name: "REC Alpha Pure 2 430 W",
-    price: "€470",
+    //price: "€470",
     image:
       "https://www.solarelectricsupply.com/media/wysiwyg/rec-roof-mounted-solar-systems-2024.png",
     features: ["430 W Output", "High Power Density", "20+25 Year Warranty"],
@@ -1546,7 +1546,7 @@ const solarPanels = [
   {
     id: 20,
     name: "REC Alpha Pure‑R 430 W",
-    price: "€480",
+    //price: "€480",
     image:
       "https://www.recgroup.com/sites/default/files/2024-05/REC_Alpha_Pure_R_1.png",
     features: ["430 W Output", "22.3 % Efficiency", "Lead‑Free & Durable"],
@@ -1563,7 +1563,7 @@ const solarPanels = [
   {
     id: 21,
     name: "SunPower Maxeon 6 425 W (SPR‑MAX6‑425‑E3‑AC)",
-    price: "$1,799",
+    //price: "$1,799",
     image:
       "https://s.alicdn.com/@sc04/kf/H9d349c23f0324fffa84b16cc66af75f5G.jpg?avif=close&webp=close",
     features: ["425 W Output", "22 % Efficiency", "MLPE‑Ready"],
@@ -1580,7 +1580,7 @@ const solarPanels = [
   {
     id: 21,
     name: "Tycorun 20 Kw Solar Energy Systems",
-    price: "$1,799",
+    //price: "$1,799",
     image:
       "https://i.pinimg.com/1200x/36/18/9f/36189f76f03a2b7bf9cccabfdbc8ab1e.jpg",
     features: ["30kw Output", "22% Efficiency", "MLPE-Ready"],
@@ -1625,7 +1625,7 @@ function renderVehicles() {
           style="background-image: url('${vehicle.image}')"></div>
         <div class="vehicle-content">
           <h3 class="vehicle-title">${vehicle.name}</h3>
-          <div class="vehicle-price">${vehicle.price}</div>
+          <div class="vehicle-price">${vehicle.price || " "}</div>
           <div class="vehicle-features">
             ${vehicle.features
               .map((feat) => `<div class="feature">${feat}</div>`)
@@ -1674,7 +1674,7 @@ function renderSolarPanels() {
           style="background-image: url('${panel.image}')"></div>
         <div class="solar-content">
           <h3 class="solar-title">${panel.name}</h3>
-          <div class="solar-price">${panel.price}</div>
+          <div class="solar-price">${panel.price || ""}</div>
           <div class="solar-features">
             ${panel.features
               .map((feat) => `<div class="feature">${feat}</div>`)
